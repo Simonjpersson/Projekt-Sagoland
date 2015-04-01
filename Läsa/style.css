@@ -1,0 +1,133 @@
+body{
+	background-color: pink;
+	font-family: Arial, "sans serif";
+}
+
+section {
+	
+	display: block;
+	
+
+	
+}
+
+.left {
+	float:left;
+	width:49%;
+	margin-left: 0,5%
+	
+}
+
+/*a:hover > .left {
+	background-image: url(Bilder/Turnleft.png);
+}*/
+
+.right {
+	float:left;
+	width:49%;
+	margin-top: 0.3%;
+}
+
+/*a.hover > .right {
+	background-image: url(Bilder/Turnright.png);
+}*/
+
+#contentleft {
+	position:absolute;
+	float:left;
+	margin-top: 10%;
+	margin-left:10%;
+}
+
+#contentright {
+	position: absolute;
+	float:left;
+	margin-top: 10%;
+	margin-left: 47%;
+	margin-right:15%;
+}
+
+
+
+
+
+
+
+
+	
+
+#wrapper{
+	width:90%;
+	height:auto;
+	margin:20px auto;
+	background-color: lightblue;
+	border: 1px solid #eee;
+	font-family: 'Lucida Bright';
+}
+		
+header{
+	overflow:hidden;
+	background-color:lightgreen;
+	border: 10px white;
+
+}
+	
+			
+header h1{
+	color: white;
+	font-size:40px;
+	text-align:center;
+	text-shadow: 5px 5px 5px #00A352;
+}	
+
+						
+nav  a{
+	display:block;
+	background-color:#DB94FF;
+	color: #fff;
+	float:left;
+	width:25%;
+	padding: 10px 0;
+	text-decoration:none;
+	text-align:center;
+	
+}
+	
+nav .chosen{
+	background-color:#CC66FF;
+}
+
+#read{
+background-color:white;
+border: 100px 000;
+width:50%;
+margin: 20px auto;
+float:left;
+border: 100px FFF;
+}
+
+#write{
+background-color:white;
+width:50%;
+margin: 20px auto;
+float:left;
+border: 10px white;
+
+}	
+	
+
+#text{
+	width:95%;
+	padding: 0 20px;
+	overflow:hidden;
+}
+
+
+	
+	
+
+footer{
+	border-top:1px solid #999;
+	text-align:center;
+	clear:both;
+}
