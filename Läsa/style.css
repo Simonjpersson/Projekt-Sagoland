@@ -1,36 +1,55 @@
 body{
-	background-color: pink;
+	
 	font-family: Arial, "sans serif";
 }
 
-section {
-	
-	display: block;
-	
 
-	
+/*Glöm inte ändra height till procent!*/
+#content {
+	height:550px;
+	width:100%;
 }
+
+
 
 .left {
-	float:left;
-	width:49%;
-	margin-left: 0,5%
+	position: absolute;
+	background-image: url(Bilder/Left.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width:44%;
+	height:100%;
+	margin-top: 4%;
+	
+	
+	
 	
 }
 
-/*a:hover > .left {
+a:hover > .left {
 	background-image: url(Bilder/Turnleft.png);
-}*/
-
-.right {
-	float:left;
-	width:49%;
-	margin-top: 0.3%;
 }
 
-/*a.hover > .right {
+.right {
+	position:absolute;
+	
+	background-image: url(Bilder/Right.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	width:44%;
+	height:100%;
+	margin-top: 4.2%;
+	margin-left: 44%;
+	
+	
+	
+	
+}
+
+a:hover > .right {
 	background-image: url(Bilder/Turnright.png);
-}*/
+}
 
 #contentleft {
 	position:absolute;
@@ -60,7 +79,6 @@ section {
 	width:90%;
 	height:auto;
 	margin:20px auto;
-	background-color: lightblue;
 	border: 1px solid #eee;
 	font-family: 'Lucida Bright';
 }
