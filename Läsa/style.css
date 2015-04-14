@@ -4,14 +4,14 @@ body{
 }
 
 
-/*Glöm inte ändra height till procent!*/
+/*Hela boken*/
 #content {
-	height:550px;
+	height:1000px;
 	width:100%;
 }
 
 
-
+/*Vänstra boksidan*/
 .left {
 	position: absolute;
 	background-image: url(Bilder/Left.png);
@@ -20,16 +20,16 @@ body{
 	width:44%;
 	height:100%;
 	margin-top: 4%;
-	
-	
-	
-	
 }
 
+/*När man för musen över vänstra boksidan viks det upp ett blad i nedre hörnet. Klickar man vänder man sida*/
 a:hover > .left {
 	background-image: url(Bilder/Turnleft.png);
 }
 
+
+
+/*Högra boksidan*/
 .right {
 	position:absolute;
 	
@@ -39,24 +39,25 @@ a:hover > .left {
 	width:44%;
 	height:100%;
 	margin-top: 4.2%;
-	margin-left: 44%;
-	
-	
-	
-	
+	margin-left: 44%;	
 }
 
+/*När man för musen över högra boksidan viks det upp ett blad i nedre hörnet. Klickar man vänder man sida*/
 a:hover > .right {
 	background-image: url(Bilder/Turnright.png);
 }
 
+
+/*Innehåll på vänstra boksidan*/
 #contentleft {
 	position:absolute;
 	float:left;
 	margin-top: 10%;
 	margin-left:10%;
+	margin-right:57%;
 }
 
+/*Innehåll på högra boksidan*/
 #contentright {
 	position: absolute;
 	float:left;
@@ -66,6 +67,14 @@ a:hover > .right {
 }
 
 
+/*Inställningar för alla bilder som läggs i boken*/
+.storyimages {
+	
+}
+
+#okej-knapp {
+	float:right;
+}
 
 
 
