@@ -20,21 +20,13 @@ body{
 	width:44%;
 	height:100%;
 	margin-top: 4%;
-	
-	
-	
-	
+		
 }
 
-a:hover > .left {
-	background-image: url(Bilder/Turnleft.png);
-}
 
 .right {
 	position:absolute;
-	
 	background-image: url(Bilder/Right.png);
-	background-repeat: no-repeat;
 	background-size: 100%;
 	width:44%;
 	height:100%;
@@ -44,10 +36,6 @@ a:hover > .left {
 	
 	
 	
-}
-
-a:hover > .right {
-	background-image: url(Bilder/Turnright.png);
 }
 
 #contentleft {
@@ -65,24 +53,16 @@ a:hover > .right {
 	margin-right:15%;
 }
 
-#textright{
+textarea{
 		position: absolute;
-		float: left;
-		margin-top: 10%;
-		margin-left: 2%;
-		width: 80%;
-		height: 69%;
+		float:left;
+		top:10%;
+		left:17%;
 		resize: none;
-}
+		border: none;
+		outline:none;
+		overflow: auto;
 
-#textleft{
-		position: absolute;
-		float: left;
-		margin-top: 10%;
-		margin-left: 2%;
-		width: 80%;
-		height: 69%;
-		resize: none;
 }
 
 #wrapper{
@@ -149,10 +129,6 @@ border: 10px white;
 	padding: 0 20px;
 	overflow:hidden;
 }
-
-
-	
-	
 
 footer{
 	border-top:1px solid #999;
