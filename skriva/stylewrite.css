@@ -14,7 +14,7 @@ body{
 
 .left {
 	position: absolute;
-	background-image: url(Bilder/Left.png);
+	background-image: url(Left.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width:44%;
@@ -26,7 +26,7 @@ body{
 
 .right {
 	position:absolute;
-	background-image: url(Bilder/Right.png);
+	background-image: url(Right.png);
 	background-size: 100%;
 	width:44%;
 	height:100%;
@@ -36,25 +36,11 @@ body{
 	
 }
 
-#contentleft {
-	position:absolute;
-	float:left;
-	margin-top: 10%;
-	margin-left:10%;
-}
-
-#contentright {
-	position: absolute;
-	float:left;
-	margin-top: 10%;
-	margin-left: 47%;
-	margin-right:15%;
-}
 /*Textområde som går att skriva på*/
 textarea{
 		position: absolute;
 		float:left;
-		top:10%;
+		top:20%;
 		left:17%;
 		resize: none;
 		border: none;
@@ -86,7 +72,11 @@ header h1{
 	text-shadow: 5px 5px 5px #00A352;
 }	
 
-						
+#title{
+	text-align: center;
+	margin-top: 10%;
+
+}						
 nav  a{
 	display:block;
 	background-color:#DB94FF;
