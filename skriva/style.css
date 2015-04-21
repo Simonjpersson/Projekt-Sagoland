@@ -55,8 +55,6 @@ a:hover > .right {
 	margin-top: 10%;
 	margin-left:10%;
 	margin-right:57%;
-	font-family: Times;
-	font-size: 100%;
 }
 
 /*Innehåll på högra boksidan*/
@@ -64,10 +62,8 @@ a:hover > .right {
 	position: absolute;
 	float:left;
 	margin-top: 10%;
-	margin-left: 48%;
-	margin-right:20%;
-	font-family: Times;
-	font-size: 100%;
+	margin-left: 47%;
+	margin-right:15%;
 }
 
 #textright{
