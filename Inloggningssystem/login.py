@@ -1,7 +1,7 @@
 # -*- coding: cp1252 -*-
 
 
-import sys, smptlib
+import sys, smptlib, re
 #to fix: message when username/password wrong
 #how to add multiple users
 
@@ -27,7 +27,7 @@ def createAccount():
 
 """ Method for the user to login, not tested with users
 """
-def validation():
+def validationOfUser():
     print "Enter your username and password"
     user = raw_input("Enter your username: ")
     if user == username:
@@ -64,8 +64,19 @@ def emailBoot():
     #use the same email as above
     mail.sendmail('fromEmail', 'receive', content)
     mail.close()
-    
 
+    
+#validate email
+def validateEmail(email):
+    if len (email) > 7:
+        print "email check#
+        if re.match("^¨.+\\@(\\[?)[a-zA-Z0-9\\-\\.]+\\.([a-zA-Z]{2,3}|[0-9]{1,3})(\\]?)$", email)!= None:
+            return False
+        return True
+    else:
+        return True
+
+        
 
 
 
