@@ -2,46 +2,6 @@ body{
 	
 	font-family: Arial, "sans serif";
 }
-/* Hela sidan(innehåll) */
-#wrapper{
-	width:90%;
-	height:auto;
-	margin:20px auto;
-	border: 1px solid #eee;
-	font-family: 'Lucida Bright';
-}
-
-header{
-	overflow:hidden;
-	background-color:lightgreen;
-	border: 10px white;
-
-}
-
-/*Content = Funktion sida */
-#content {
-	height:auto;
-	width:100%;
-}
-/* innehåll till vänster*/
-
-#contentleft {
-	position: absolute;
-	top:90%;
-	left:24%;
-	float:left;
-
-}
-/*innehåll till höger*/
-
-#contentright {
-	position: absolute;
-	top: 90%;
-	right: 24%;
-	float:right;
-
-}
-
 
 /*css till meny*/
 
@@ -165,7 +125,45 @@ line-height: 1;
   background: #C2EBFF;
 }
 
+/* Hela sidan(innehåll) */
+#wrapper{
+  width:90%;
+  height:auto;
+  margin:20px auto;
+  border: 1px solid #eee;
+  font-family: 'Lucida Bright';
+}
 
+header{
+  overflow:hidden;
+  background-color:lightgreen;
+  border: 10px white;
+
+}
+
+/*Content = Funktion sida */
+#content {
+  height:auto;
+  width:100%;
+}
+/* innehåll till vänster*/
+
+#contentleft {
+  position: absolute;
+  top:90%;
+  left:24%;
+  float:left;
+
+}
+/*innehåll till höger*/
+
+#contentright {
+  position: absolute;
+  top: 90%;
+  right: 24%;
+  float:right;
+
+}
 
 
 #book {
@@ -187,6 +185,32 @@ textarea{
 
 }
 
+#picturebox{
+    
+    width: 1000px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid blue; 
+
+}
+
+#dropbox{
+    position: absolute;
+    top: 39%;
+    right: 17%;
+    width: 401px;
+    height: 447px;
+}
+
+#div1{
+    width:350px;
+    height: 70px;
+    padding: 10px;
+    border:1px;
+
+
+  }
 header h1{
 	color: white;
 	font-size:40px;
@@ -201,25 +225,6 @@ header h1{
 	text-align: center;
 
 }						
-
-#read{
-background-color:white;
-border: 100px 000;
-width:50%;
-margin: 20px auto;
-float:left;
-border: 100px FFF;
-}
-
-#write{
-background-color:white;
-width:50%;
-margin: 20px auto;
-float:left;
-border: 10px white;
-
-}	
-	
 
 #text{
 	width:95%;
