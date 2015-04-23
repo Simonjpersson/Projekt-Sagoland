@@ -1,0 +1,25 @@
+create table Story(
+Title varchar(200) primary key,
+Category varchar(100),
+Text varchar (2000),
+Author varchar(50)
+)
+
+create table Users(
+UserID integer primary key,
+Usertype varchar(10),
+Name varchar(50),
+Years date, 
+Email varchar(100) not null
+)
+
+
+insert into Users (UserID,Usertype,Name,Years, Email)
+
+values (1,'Admin','Mimmi Castmo',1993,'mimmi.castmo@gmail.com')
+
+values (3,'Admin','Emma Persson Wik',1995,'emmaperssonwik@gmail.com')
+
+values (4,'Admin','Marielle Moreira Lucana',1994,'marielle.moreira.lucana@gmail.com')
+
+values (5,'Admin','Simon Persson',1990,'simonjohanpersson@gmail.com')
