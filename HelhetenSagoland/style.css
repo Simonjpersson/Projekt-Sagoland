@@ -1,0 +1,92 @@
+body{
+	background-color: pink;
+	font-family: Arial, "sans serif";
+}
+	
+#wrapper{
+	width:90%;
+	height:auto;
+	margin:20px auto;
+	background-color: lightblue;
+	border: 1px solid #eee;
+	font-family: 'Lucida Bright';
+}
+		
+
+/* Menyn */							
+nav  a{
+	display:block;
+	background-color:#A49DF7;
+	color: #fff;
+	float:left;
+	width:25%;
+	padding: 10px 0;
+	text-decoration:none;
+	text-align:center;
+}
+	
+nav .chosen{
+	background-color:#CC99FF;
+}
+				
+
+
+#read{
+background-color:white;
+border: 100px 000;
+width:50%;
+margin: 20px auto;
+float:left;
+border: 100px FFF;
+}
+
+#write{
+background-color:white;
+width:50%;
+margin: 20px auto;
+float:left;
+border: 10px white;
+
+}	
+	
+
+#text{
+	width:95%;
+	padding: 0 20px;
+	overflow:hidden;
+}
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+	
+p.center{
+text-align:center;
+}
+
+footer{
+	border-top:1px solid #999;
+	text-align:center;
+
+}
+
+/* Responsiv */	
+@media (max-width: 600px){
+	section{
+		width:100%;
+	}
+}
+
+@media (max-width: 360px){
+	nav  a{
+		float:none;
+		width:100%;
+	}
+}
+
+@media (max-width: 1024px){
+	body,wrapper{
+		margin:0px;
+		width:100%
+	}
+}
