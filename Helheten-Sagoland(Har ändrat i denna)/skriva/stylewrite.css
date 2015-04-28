@@ -44,23 +44,24 @@ nav .chosen{
   height:auto;
   width:100%;
 }
-/* innehåll till vänster*/
 
-#contentleft {
-  position: absolute;
-  top:90%;
-  left:24%;
-  float:left;
+/* Ny saga! */
+
+#new_story {
+	position: absolute;
+	float: left;
+	top: 28%;
+	left: 18%;
 
 }
-/*innehåll till höger*/
 
-#contentright {
-  position: absolute;
-  top: 90%;
-  right: 24%;
-  float:right;
+/* val till en existerande saga*/
 
+#old_story{
+	position: absolute;
+	float: right;
+	top: 28%;
+	right: 22%;
 }
 
 /*Namnet på sagan som är ett input element*/
@@ -164,4 +165,61 @@ footer{
 	border-top:1px solid #999;
 	text-align:center;
 	clear:both;
+}
+	/* sne text för ny saga ! */
+
+.symbol1 {
+    -webkit-transform: translate(0px, 30px) rotate(-35deg); 
+}
+.symbol2 {
+    -webkit-transform: translate(0px, 25px) rotate(-25deg); 
+}
+.symbol3 {
+    -webkit-transform: translate(0px, 23px) rotate(0deg); 
+}
+.symbol4 {
+    -webkit-transform: translate(0px, 25px) rotate(25deg); 
+}
+.symbol5 {
+    -webkit-transform: translate(0px, 30px) rotate(35deg); 
+}
+.symbol6 {
+    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
+}
+
+/*båda span elementen */
+
+
+/* Sparad saga i sne text! */
+
+.symbol7 {
+    -webkit-transform: translate(0px, 30px) rotate(-35deg); 
+}
+.symbol8 {
+    -webkit-transform: translate(0px, 25px) rotate(-25deg); 
+}
+.symbol9 {
+    -webkit-transform: translate(0px, 23px) rotate(0deg); 
+}
+.symbol10 {
+    -webkit-transform: translate(0px, 25px) rotate(25deg); 
+}
+.symbol11 {
+    -webkit-transform: translate(0px, 30px) rotate(35deg); 
+}
+.symbol12 {
+    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
+}
+
+.symbol13 {
+    -webkit-transform: translate(0px, 23px) rotate(0deg); 
+}
+.symbol14 {
+    -webkit-transform: translate(0px, 25px) rotate(25deg); 
+}
+.symbol15 {
+    -webkit-transform: translate(0px, 30px) rotate(35deg); 
+}
+.symbol16 {
+    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
 }
