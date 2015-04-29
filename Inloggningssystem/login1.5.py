@@ -53,14 +53,27 @@ def createUser():
         print 'invalid'
     else:
         adress = raw_input('ange din adress igen')
-                              
+
+
+""" /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.
+
+/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+'\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b'
+vet inte vilket som är bäst än
+"""
     def validateEmail(mejl):
-        if re.match('\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b')
-            print 
+        min_len, max_domain = 1,4
+       symbols = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.'  
+        if re.match(symbols, mejl) 
+            return True
+        else
+            return False
+        mejl = raw_input('skriv email igen')
+
     
 
 #skicka email
-import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 def emailFromPython():
@@ -78,7 +91,7 @@ som lär väl hämtas från databasen om man inte skickar nytt
     mailserver.ehlo()
     mailserver.starttls()
     mailserver.ehlo()
-    mailserber.login('sagoland@gmail.com', 'lösenord')
+    mailserver.login('sagoland@gmail.com', 'lösenord')
     mailserver.sendmail('sagoland@gmail.com', mejl, theMessage.as_String())
     mailserver.quit()
 
@@ -94,4 +107,7 @@ def login():
     elif userinputPass != password1:
         print 'invalid password'
     else:
-        emailFromPython()   
+        emailFromPython()
+
+def updateUsers():
+    
