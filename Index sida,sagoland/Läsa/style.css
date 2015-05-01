@@ -1,10 +1,19 @@
 body{
-	
+	background-color: pink;
 	font-family: Arial, "sans serif";
 }
+#wrapper{
+	width:90%;
+	height:auto;
+	margin:20px auto;
+	background-color: lightblue;
+	border: 1px solid #eee;
+	font-family: 'Lucida Bright';
+}
+		
 
-
-/*Hela boken*/
+	
+	/*Hela boken*/
 #content {
 	height:1000px;
 	width:100%;
@@ -107,46 +116,37 @@ a:hover > .right {
 
 	
 >>>>>>> origin/master
+	
 
 #wrapper{
 	width:90%;
 	height:auto;
 	margin:20px auto;
+	background-color: lightblue;
 	border: 1px solid #eee;
 	font-family: 'Lucida Bright';
 }
 		
-header{
-	overflow:hidden;
-	background-color:lightgreen;
-	border: 10px white;
-
-}
-	
-			
-header h1{
-	color: white;
-	font-size:40px;
-	text-align:center;
-	text-shadow: 5px 5px 5px #00A352;
-}	
 
 						
 nav  a{
 	display:block;
-	background-color:#DB94FF;
+	background-color:#A49DF7;
 	color: #fff;
 	float:left;
 	width:25%;
 	padding: 10px 0;
 	text-decoration:none;
 	text-align:center;
-	
 }
 	
+
 nav .chosen{
-	background-color:#CC66FF;
+	background-color:#CC99FF;
 }
+
+					
+
 
 #read{
 background-color:white;
@@ -172,13 +172,37 @@ border: 10px white;
 	padding: 0 20px;
 	overflow:hidden;
 }
-
-
+img.center {
+    display: block;
+    margin: 0 auto;
+}
 	
-	
+p.center{
+text-align:center;
+}
 
 footer{
 	border-top:1px solid #999;
 	text-align:center;
-	clear:both;
+
+}
+
+@media (max-width: 600px){
+	section{
+		width:100%;
+	}
+}
+
+@media (max-width: 360px){
+	nav  a{
+		float:none;
+		width:100%;
+	}
+}
+
+@media (max-width: 1024px){
+	body,wrapper{
+		margin:0px;
+		width:100%
+	}
 }
