@@ -1,5 +1,4 @@
 /*-- Funktionen som döljer bilder! */
-
 function toggle_div_fun(id) {
 
 	var divelement = document.getElementById(id)
@@ -8,26 +7,29 @@ function toggle_div_fun(id) {
 	else
 		divelement.style.display = 'block';
 }
-/*-- Funktionen som gör det möjligt att dra och släppa bilder */
 
-function allowDrop(ev) {
-    ev.preventDefault();
+/*-- När du dubbelklickar på bilden så flyttar den upp till droppbox*/
+function moveImg(e){
+    if( $(e).parent().attr("id") == "picturebox" ){
+        $(e).detach().appendTo('#dropbox');
+    }
+    else{
+        $(e).detach().appendTo('#picturebox'); 
+    }
+    /*-- gör så att bilden går att flytta på */
+    $(document).ready(function() {
+  		$('.move_image').draggable({
+    	cursor: 'move',
+    	containment: '#dropbox'});
+  
+	});
 }
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
 
 
 
-function saveStoryTextAsFile()
-{
+function saveStoryTextAsFile(){
+
 	var textToWrite = document.getElementById("story_text").value;
 	var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
 	var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
@@ -36,6 +38,7 @@ function saveStoryTextAsFile()
 	downloadLink.download = fileNameToSaveAs;
 	downloadLink.innerHTML = "Download File";
 	if (window.webkitURL != null)
+
 	{
 		/* behöver för att chrome ska tillåta den att fungera*/
 
@@ -72,30 +75,6 @@ function loadFileAsText()
 
 	fileReader.readAsText(fileToLoad, "UTF-8");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-- Alla färger du kan välja på för att ändra texten! */
 
@@ -143,5 +122,3 @@ function set_font_ComicSansMS(id) {
 	document.getElementById("story_text").style.fontFamily= "Comic Sans MS"
 }
 
-
-window.addEventListener("load")
