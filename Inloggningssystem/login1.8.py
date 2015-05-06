@@ -89,8 +89,8 @@ def login():
     username = request.forms.username
     password1 = request.forms.passoword1
 
-#samma variabel namn, blir inte system förvirras? måste man då initierar nya
-    #variabelnamn?
+#samma variabel namn, blir inte system förvirrad? måste man då initierar nya
+    #variabelnamn i denna metoden då som private??
     if username == username and password1 == password1:
         print "you're in"
     elif username != username:

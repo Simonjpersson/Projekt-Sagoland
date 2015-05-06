@@ -31,6 +31,7 @@ def createUser():
     adress.lower()
 
     
+<<<<<<< HEAD
     username = request.forms.username
     firstname = request.forms.firstname
     lastname = request.forms.lastname
@@ -47,9 +48,19 @@ def createUser():
             return "Lösenordet matchar ej"
             
     
+=======
+
+""" /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.
+
+/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+'\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b'
+vet inte vilket som är bäst än
+"""
+>>>>>>> parent of b1d66e7... login 1.7
     def validateEmail(mejl):
         min_len, max_domain = 1,4
-        symbols = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.'  
+       symbols = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.'  
         if re.match(symbols, mejl) 
             return True
         else
@@ -71,7 +82,6 @@ som lär väl hämtas från databasen om man inte skickar nytt
 """
     theMessage = 'Här är ditt nya lösenord'
     message.attach(MIMEText(theMessage))
-
 #denna funkar bara till gmail 
     mailserver = smtplib.SMTP('smtp.gmai.com', 587)
     mailserver.ehlo()
