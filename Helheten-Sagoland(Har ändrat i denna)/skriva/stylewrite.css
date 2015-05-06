@@ -8,29 +8,115 @@
 /*helheten bakgrunds färgen*/
 
 body{
-	background-color: pink;
+	background-image: url(cloud.jpg);
 	font-family: Arial, "sans serif";
 }
 
-/* Menyn */						
-nav  a{
-	display:block;
-	background-color:#A49DF7;
-	color: #fff;
-	float:left;
-	width:25%;
-	padding: 10px 0;
-	text-decoration:none;
-	text-align:center;
+/* Menyn */							
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+margin: 0;
+padding: 0;
+border: 0;
+list-style: none;
+line-height: 1;
+display: block;
+position: relative;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
-/* vald flik i meny */		
-nav .chosen{
-	background-color:#CC99FF;
+#cssmenu:after,
+#cssmenu > ul:after {
+content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
+
+
+#cssmenu {
+width: auto;
+border-bottom: 0px solid #999999;
+font-family: Raleway, sans-serif;
+line-height: 1;
+}
+#cssmenu ul {
+  background: #85E085;
+}
+#cssmenu > ul > li {
+  float: right;
+
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 10px 25px 8px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #444444;
+  transition: all .2s ease;
+  margin-right: -4px;
+ 
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color:#000;
+  
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: lightblue;
+}
+
 
 /* Wrapper Css (innehåll) */
 #wrapper{
-  width:90%;
+  width:97%;
   height:auto;
   background-color: lightblue;
   margin:20px auto;
@@ -69,7 +155,7 @@ nav .chosen{
 #Titel{
 	text-align: center;
 	margin-top: 2%;
-	margin-left: 15%;
+	margin-left: 21%;
 	width: 70%;
 	font-family: myFont;
 	font-size: 28px;
@@ -82,34 +168,46 @@ nav .chosen{
 /*boken som helhet*/
 
 #book {
-	position: relative;
-	margin-left: 4%;
-	margin-top: 4%;
+  width: 87%;
+  margin-top: 5%;
+  margin-left: 16%;
+
 
 }
 
 /*Textområde som går att skriva på*/
 textarea{
 		position: absolute;
-		top: 16%;
-		left: 7%;
-		max-height: 59%;
-		max-width: 35%; 
+		top: 74%;
+		left: 23%;
+		max-height: 58%;
+		max-width: 31%; 
 		font-family: "Comic Sans MS", sans-serif;
 		font-size: 20px;
 		resize: none;
 		border: none;
 		outline:none;
 		overflow: auto;
+    background-color: transparent;
+}
+
+#function_button{
+  position: absolute;
+  top: 61%;
+  width: auto;
+  left:-3%;
+
 }
 
 /*elementet för val av färger*/
 
 #textchoose{
-		width: 10%;
+		width: 45%;
 		height: auto;
-		border-style: dotted;
-		display: none;
+		margin-bottom: 5px;
+    margin-left: 23px;
+    display: none;
+
 }
 
 /*elementet som har alla bilder*/
@@ -119,9 +217,9 @@ textarea{
     margin-top: 50px;
     width: 1000px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid blue; 
+    margin-left: 18%;
+    margin-bottom: 5px;
+    border: 3px solid black; 
 
 }
 
@@ -129,11 +227,10 @@ textarea{
 
 #dropbox{
     position: absolute;
-    top: 4%;
-    right: 13%;
+    top: 63%;
+    right: 8%;
     height: 445px;
     width: 433px;
-    border-style: dotted;
     
 }
 
@@ -155,71 +252,26 @@ textarea{
 /*elementet som innehåller alla olika fonts alternativ*/
 
 #font_text {
-	display: none;
+	margin-bottom: 3px;
+  margin-left: 23px;
+  display: none;
 
 }
 
+#meny_button {
+	list-style: none;
+	margin: 5px;
+
+
+}
+
+.list_button{
+	margin: 13%;
+}
 /*css för footer*/
 
 footer{
 	border-top:1px solid #999;
 	text-align:center;
 	clear:both;
-}
-	/* sne text för ny saga ! */
-
-.symbol1 {
-    -webkit-transform: translate(0px, 30px) rotate(-35deg); 
-}
-.symbol2 {
-    -webkit-transform: translate(0px, 25px) rotate(-25deg); 
-}
-.symbol3 {
-    -webkit-transform: translate(0px, 23px) rotate(0deg); 
-}
-.symbol4 {
-    -webkit-transform: translate(0px, 25px) rotate(25deg); 
-}
-.symbol5 {
-    -webkit-transform: translate(0px, 30px) rotate(35deg); 
-}
-.symbol6 {
-    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
-}
-
-/*båda span elementen */
-
-
-/* Sparad saga i sne text! */
-
-.symbol7 {
-    -webkit-transform: translate(0px, 30px) rotate(-35deg); 
-}
-.symbol8 {
-    -webkit-transform: translate(0px, 25px) rotate(-25deg); 
-}
-.symbol9 {
-    -webkit-transform: translate(0px, 23px) rotate(0deg); 
-}
-.symbol10 {
-    -webkit-transform: translate(0px, 25px) rotate(25deg); 
-}
-.symbol11 {
-    -webkit-transform: translate(0px, 30px) rotate(35deg); 
-}
-.symbol12 {
-    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
-}
-
-.symbol13 {
-    -webkit-transform: translate(0px, 23px) rotate(0deg); 
-}
-.symbol14 {
-    -webkit-transform: translate(0px, 25px) rotate(25deg); 
-}
-.symbol15 {
-    -webkit-transform: translate(0px, 30px) rotate(35deg); 
-}
-.symbol16 {
-    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
 }

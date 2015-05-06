@@ -5,6 +5,9 @@
 		<title>Sagoland</title>
 		<link href="stylewrite.css" rel="stylesheet" type="text/css">
 		<script src="javascriptwrite.js"></script>
+		<script src="jquery-1.11.2..js"></script>
+		<script src="jquery-ui.js"></script>
+		
 		
 	</head>
 	
@@ -16,88 +19,28 @@
 			</header>
 	
 			<!--meny-->
-			<nav> 	
-		
-					<a href="../index.html">Startsida</a>
-					<a href="../read.html">Läs Saga</a>
-					<a href="../loggin.html" class="chosen">Skriv Saga</a>
-					<a href="../contact1.html">Kontakt</a>
-		
-			</nav>
-
-				<!--Hela bokens innehåll!-->
-
-				<section>
-
-					<!--Input text till Sagans namn-->
+			<div id='cssmenu'>
+				<ul> 	
 					
-					<input type="text" id="Titel" value="Vad heter din saga?">
-						
-						<!--Hela bokens element!-->
+						<li><a href="contact1.html">Kontakta Oss</a></li>
+						<li class='active'><a href="loggin.html">Skriv Saga</a></li>
+						<li><a href="read.html">Läs Saga</a></li>
+						<li ><a href="index.html">Startsida</a></li>
+					
+				</ul>
+			</div>
 
-						<div id="book">
-
-							<img src="book.png" alt="En bok">
-
-								<!--Textarea som du skriver din text i, på bokens vänstra sida-->
-
-								<textarea id="story_text" rows="24" cols="55" maxlength="500">Skriv din text här!</textarea>
-									
-									<!--Dropp elementet på bokens högrasida! enbart ett tomt div element-->
-
-									<div id="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)">
-
-									</div>	
-						</div>
-
+					<div id="function_button">
 						<!--knapparna som gör att elementen med "bilder", "text-färg" & "typsnitt" blir synliga/gömda.-->
+						<ul id="meny_button">
 
-							<button onclick="toggle_div_fun('picturebox');">Här finns bilder</button>
+							<li class="list_button"><button onclick="toggle_div_fun('picturebox');">Här finns bilder</button></li>
 
-							<button onclick="toggle_div_fun('textchoose');">Välj färg på din text</button>
-
-							<button onclick="toggle_div_fun('font_text');">Ändra stil på din text</button>
-
-							<!--spara din saga -->
-
-							<button onclick="saveStoryTextAsFile('');">Spara din saga</button>
-							<input id="inputFileNameToSaveAs"></input>
-
-							<button onclick="loadFileAsText()">Ladda en sparad saga</button>
-							
-							<input type="file" id="fileToLoad">
-
-							
-
-							<!-- Elementet som innehåller alla bilder och gör det möjligt att dra ifrån -->
-							
-							<div id="picturebox" ondrop="drop(event)" ondragover="allowDrop(event)">
-
-								<img id="Girl" src="bild/bilddrag/girl.png" draggable="true" ondragstart="drag(event)">
-
-								<img id="boy" src="bild/bilddrag/boy.png" draggable="true" ondragstart="drag(event)" >
-
-								<img id="Bull" src="bild/bilddrag/Bull.png" draggable="true" ondragstart="drag(event)" >
-
-								<img id="tree" src="bild/bilddrag/tree.png" draggable="true" ondragstart="drag(event)">
-
-								<img id="cat" src="bild/bilddrag/cat.png" draggable="true" ondragstart="drag(event)">
-
-								<img id="car" src="bild/bilddrag/car.png" draggable="true" ondragstart="drag(event)">
-
-								<img id="firetruck" src="bild/bilddrag/firetruck.png" draggable="true" ondragstart="drag(event)">
-
-								<img id="witch" src="bild/bilddrag/witch.png" draggable="true" ondragstart="drag(event)">
-
-								<img id="sun" src="bild/bilddrag/sun.png" draggable="true" ondragstart="drag(event)">
-
-								<img id="house" src="bild/bilddrag/house.png" draggable="true" ondragstart="drag(event)">
-							</div>
-
-										<!--Innehåller olika färgval för texten -->
+															<!--Innehåller olika färgval för texten -->
+							<li class="list_button"><button onclick="toggle_div_fun('textchoose');">Välj färg på din text</button></li>
+										
+								
 										<div id="textchoose">
-
-											<!--Listan med alla färger(bilder) & knappar för funktionen -->
 											
 											<ul class="change_text_style">
 
@@ -127,7 +70,10 @@
 
 											</ul>
 										</div>
-												<!-- Innehåller de olika font alternativen(bild) & knappar för funktionen -->
+
+													<!-- Innehåller de olika font alternativen(bild) & knappar för funktionen -->
+							<li class="list_button"><button onclick="toggle_div_fun('font_text');">Ändra stil på din text</button></li>
+
 												<div id="font_text">
 
 													<ul class="change_text_style">
@@ -149,16 +95,67 @@
 														</li>
 
 													</ul>
-
 												</div>
-				</section>
+
+									<!--Spara sagan och kunna ladda den genom javascript/blob/-->
+							
+							<li class="list_button"><button onclick="saveStoryTextAsFile('');">Spara din saga</button></li>
+							<li class="list_button"><input id="inputFileNameToSaveAs" value="Vad heter din saga"></input></li>
+							<li class="list_button"><button onclick="loadFileAsText()">Ladda en sparad saga</button></li>
+							<li class="list_button"><input type="file" id="fileToLoad"></li>
+						</ul>		
+					</div>
+
+				<!--Hela bokens innehåll!-->
+						<input type="text" maxlength="55" id="Titel" value="Vad heter din saga?">
+		
+						<!--Hela bokens element!-->
+
+						<div id="book">
+
+							<img src="book.png" alt="En bok">
+
+								<!--Textarea som du skriver din text i, på bokens vänstra sida-->
+
+								<textarea id="story_text" rows="24" cols="55" maxlength="500">Skriv din text här!</textarea>
+									
+									<!--Dropp elementet på bokens högrasida! enbart ett tomt div element-->
+
+									<div id="dropbox">
+
+									</div>	
+						</div>
+
+							<!-- Elementet som innehåller alla bilder och gör det möjligt att dra ifrån -->
+							
+							<div id="picturebox">
+
+								<img class="move_image" src="bild/bilddrag/girl.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="bild/bilddrag/boy.png" ondblclick="moveImg(this)">
+
+								<img class="move_image"src="bild/bilddrag/Bull.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="bild/bilddrag/tree.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="bild/bilddrag/cat.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="bild/bilddrag/car.png"ondblclick="moveImg(this)">
+
+								<img class="move_image" src="bild/bilddrag/firetruck.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="bild/bilddrag/witch.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="bild/bilddrag/sun.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="bild/bilddrag/house.png" ondblclick="moveImg(this)">
+							</div>		
 												<!--Footern-->
 												
-												<footer>
-													<p> Hemsidan är skapad som ett projekt i kursen Systemutveckling på Malmö Högskola</p>
-													<p>Coypright 2015</p>
-													
-												</footer>
+					<footer>
+					<p> Hemsidan är skapad som ett projekt i kursen Systemutveckling på Malmö Högskola</p>
+					<p>Coypright 2015</p>
+					</footer>
 		</div>
 	</body>
 </html>

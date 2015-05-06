@@ -1,0 +1,225 @@
+/*Importerad font*/
+
+@font-face {
+		font-family: myFont;
+		src: url(hornswog.ttf);
+}
+
+/*helheten bakgrunds färgen*/
+
+body{
+	background-color: pink;
+	font-family: Arial, "sans serif";
+}
+
+/* Menyn */						
+nav  a{
+	display:block;
+	background-color:#A49DF7;
+	color: #fff;
+	float:left;
+	width:25%;
+	padding: 10px 0;
+	text-decoration:none;
+	text-align:center;
+}
+/* vald flik i meny */		
+nav .chosen{
+	background-color:#CC99FF;
+}
+
+/* Wrapper Css (innehåll) */
+#wrapper{
+  width:90%;
+  height:auto;
+  background-color: lightblue;
+  margin:20px auto;
+  border: 1px solid #eee;
+  font-family: 'Lucida Bright';
+}
+
+
+/*Content = Funktion sida */
+#content {
+  height:auto;
+  width:100%;
+}
+
+/* Ny saga! */
+
+#new_story {
+	position: absolute;
+	float: left;
+	top: 28%;
+	left: 18%;
+
+}
+
+/* val till en existerande saga*/
+
+#old_story{
+	position: absolute;
+	float: right;
+	top: 28%;
+	right: 22%;
+}
+
+/*Namnet på sagan som är ett input element*/
+
+#Titel{
+	text-align: center;
+	margin-top: 2%;
+	margin-left: 15%;
+	width: 70%;
+	font-family: myFont;
+	font-size: 28px;
+	border: none;
+	background: none;
+	outline: none;
+
+}
+
+/*boken som helhet*/
+
+#book {
+	position: relative;
+	margin-left: 4%;
+	margin-top: 4%;
+
+}
+
+/*Textområde som går att skriva på*/
+textarea{
+		position: absolute;
+		top: 16%;
+		left: 7%;
+		max-height: 59%;
+		max-width: 35%; 
+		font-family: "Comic Sans MS", sans-serif;
+		font-size: 20px;
+		resize: none;
+		border: none;
+		outline:none;
+		overflow: auto;
+}
+
+/*elementet för val av färger*/
+
+#textchoose{
+		width: 10%;
+		height: auto;
+		border-style: dotted;
+		display: none;
+}
+
+/*elementet som har alla bilder*/
+
+#picturebox{
+	display: none;
+    margin-top: 50px;
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid blue; 
+
+}
+
+/*elementet där du kan släppa alla bilder*/
+
+#dropbox{
+    position: absolute;
+    top: 4%;
+    right: 13%;
+    height: 445px;
+    width: 433px;
+    border-style: dotted;
+    
+}
+
+/*listan för de olika förändrings alternativen (färg/typsnitt)*/
+
+.change_text_style{
+		list-style-type: none;
+		margin-left: -36px;
+}
+
+/*knapparna i listan för förändrings alternativen(färg/typsnitt)*/
+
+.text_style_button{
+		position: absolute;
+		margin-left: 6px;
+		margin-top: 6px;
+}
+
+/*elementet som innehåller alla olika fonts alternativ*/
+
+#font_text {
+	display: none;
+
+}
+
+/*css för footer*/
+
+footer{
+	border-top:1px solid #999;
+	text-align:center;
+	clear:both;
+}
+	/* sne text för ny saga ! */
+
+.symbol1 {
+    -webkit-transform: translate(0px, 30px) rotate(-35deg); 
+}
+.symbol2 {
+    -webkit-transform: translate(0px, 25px) rotate(-25deg); 
+}
+.symbol3 {
+    -webkit-transform: translate(0px, 23px) rotate(0deg); 
+}
+.symbol4 {
+    -webkit-transform: translate(0px, 25px) rotate(25deg); 
+}
+.symbol5 {
+    -webkit-transform: translate(0px, 30px) rotate(35deg); 
+}
+.symbol6 {
+    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
+}
+
+/*båda span elementen */
+
+
+/* Sparad saga i sne text! */
+
+.symbol7 {
+    -webkit-transform: translate(0px, 30px) rotate(-35deg); 
+}
+.symbol8 {
+    -webkit-transform: translate(0px, 25px) rotate(-25deg); 
+}
+.symbol9 {
+    -webkit-transform: translate(0px, 23px) rotate(0deg); 
+}
+.symbol10 {
+    -webkit-transform: translate(0px, 25px) rotate(25deg); 
+}
+.symbol11 {
+    -webkit-transform: translate(0px, 30px) rotate(35deg); 
+}
+.symbol12 {
+    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
+}
+
+.symbol13 {
+    -webkit-transform: translate(0px, 23px) rotate(0deg); 
+}
+.symbol14 {
+    -webkit-transform: translate(0px, 25px) rotate(25deg); 
+}
+.symbol15 {
+    -webkit-transform: translate(0px, 30px) rotate(35deg); 
+}
+.symbol16 {
+    -webkit-transform: translate(-3px, 42px) rotate(55deg); 
+}
