@@ -12,6 +12,7 @@ body{
 	font-family: Arial, "sans serif";
 }
 
+
 /* Wrapper Css (innehåll) */
 #wrapper{
   height:auto;
@@ -21,8 +22,164 @@ body{
   font-family: 'Lucida Bright';
 }
 
-/* Menyn */							
 
+/*Content = Funktion sida */
+#content {
+  overflow: auto;
+  width:100%;
+}
+
+#startpage_book{
+  width: 80%;
+  height: 585px;
+  margin-left: 10%;
+  margin-top: 2%;
+  background-image: url(book1.png);
+}
+/* Ny saga! */
+
+#new_story {
+  position: absolute;
+  float: left;
+  top: 28%;
+  left: 18%;
+
+}
+
+/* val till en existerande saga*/
+
+#old_story{
+  position: absolute;
+  float: right;
+  top: 28%;
+  right: 22%;
+}
+
+
+/*När man för musen över högra boksidan viks det upp ett blad i nedre hörnet. Klickar man vänder man sida*/
+a:hover > .right {
+  background-image: url(bok.turn.png);
+}
+/*diven för hela meny till funktionerna för ändra stil i skriva! */
+
+#function_button{
+  float: left;
+  width: 17%;
+  margin-top: 7%;
+  margin-right: 0%;
+  background-color: green;
+
+}
+
+/* Ul listan med alla knappar */ 
+
+#meny_button {
+  float: left;
+  width: 77%;
+  list-style: none;
+  padding-left: 2%;
+  margin-top: 8%;
+}
+
+/*listan för de olika förändrings alternativen (färg/typsnitt)*/
+
+.change_text_style{
+    list-style-type: none;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: -23%;
+}
+
+/*knapparna i listan för förändrings alternativen(färg/typsnitt)*/
+
+.text_style_button{
+    position: absolute;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+/*elementet som innehåller alla olika fonts alternativ*/
+
+#font_text {
+  display: none;
+  list-style: none;
+
+}
+
+.list_button{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+/*elementet för val av färger*/
+#textchoose{
+    width: 45%;
+    height: auto;
+    margin-left: -20px;
+    display: none;
+
+}
+
+/*Namnet på sagan som är ett input element*/
+#Titel{
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-bottom: 1%;
+  width: 70%;
+  font-family: myFont;
+  font-size: 28px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/*boken som helhet*/
+#book {
+  float: right;
+  width: 80%;
+  height: 585px;
+  background-image: url(book.png);
+}
+
+/*Textområde som går att skriva på*/
+textarea{
+    float: left;
+    margin-top: 80px;
+    margin-left: 77px;
+    height: 353px;
+    width: 408px;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+    resize: none;
+    border: none;
+    outline:none;
+    overflow: auto;
+    background-color: pink;
+}
+
+/*elementet där du kan släppa alla bilder*/
+#dropbox{
+    float:right;
+    height: 449px;
+    width: 442px;
+    margin-right: 57px;
+    margin-top: 23px;
+    background-color: black;   
+}
+
+/*elementet som har alla bilder*/
+#picturebox{
+    display: none;
+    float: right;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-right: 5px;
+    width: 78%;
+    border: 3px solid black; 
+}
+
+/* Menyn */							
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 #cssmenu,
 #cssmenu ul,
@@ -48,8 +205,6 @@ content: ".";
   line-height: 0;
   height: 0;
 }
-
-
 #cssmenu {
 width: auto;
 border-bottom: 0px solid #999999;
@@ -122,150 +277,3 @@ line-height: 1;
   background: lightblue;
 }
 
-
-/*Content = Funktion sida */
-#content {
-  overflow: auto;
-  width:100%;
-}
-
-/* Ny saga! */
-
-#new_story {
-	position: absolute;
-	float: left;
-	top: 28%;
-	left: 18%;
-
-}
-
-/* val till en existerande saga*/
-
-#old_story{
-	position: absolute;
-	float: right;
-	top: 28%;
-	right: 22%;
-}
-
-/*Namnet på sagan som är ett input element*/
-
-#Titel{
-	text-align: center;
-	margin-top: 3%;
-	margin-left: 8%;
-  margin-bottom: 1%;
-	width: 70%;
-	font-family: myFont;
-	font-size: 28px;
-	border: none;
-	background: none;
-	outline: none;
-
-}
-
-/*boken som helhet*/
-
-#book {
-  float: right;
-  width: 80%;
-  height: 585px;
-  background-image: url(book.png);
-
-}
-
-/*Textområde som går att skriva på*/
-textarea{
-    float: left;
-    margin-top: 80px;
-    margin-left: 77px;
-    height: 353px;
-    width: 408px;
-		font-family: "Comic Sans MS", sans-serif;
-		font-size: 20px;
-		resize: none;
-		border: none;
-		outline:none;
-		overflow: auto;
-    background-color: pink;
-}
-
-/*elementet där du kan släppa alla bilder*/
-
-#dropbox{
-    float:right;
-    height: 449px;
-    width: 442px;
-    margin-right: 57px;
-    margin-top: 23px;
-    background-color: black;   
-}
-
-
-
-#function_button{
-  float: left;
-  width: 17%;
-  margin-top: 7%;
-  margin-right: 0%;
-  background-color: green;
-
-}
-
-/*elementet för val av färger*/
-
-#textchoose{
-		width: 45%;
-		height: auto;
-		margin-bottom: 5px;
-    margin-left: 23px;
-    display: none;
-
-}
-
-/*elementet som har alla bilder*/
-
-#picturebox{
-    display: none;
-    float: right;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    width: 78%;
-    border: 3px solid black; 
-}
-
-/*listan för de olika förändrings alternativen (färg/typsnitt)*/
-
-.change_text_style{
-		list-style-type: none;
-		margin-top: 4%;
-    margin-bottom: 4%;
-    margin-left: -23%;
-}
-
-/*knapparna i listan för förändrings alternativen(färg/typsnitt)*/
-
-.text_style_button{
-		position: absolute;
-		margin-left: 6px;
-		margin-top: 6px;
-}
-
-/*elementet som innehåller alla olika fonts alternativ*/
-
-#font_text {
-  display: none;
-}
-
-#meny_button {
-  float: left;
-  width: 77%;
-  list-style: none;
-  padding-left: 2%;
-  margin-top: 8%;
-}
-
-.list_button{
-  margin-bottom: 10%;
-  margin-top: 10%;
-}
