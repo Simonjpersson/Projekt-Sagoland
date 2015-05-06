@@ -12,6 +12,15 @@ body{
 	font-family: Arial, "sans serif";
 }
 
+/* Wrapper Css (innehåll) */
+#wrapper{
+  height:auto;
+  background-color: lightblue;
+  margin:20px auto;
+  border: 1px solid #eee;
+  font-family: 'Lucida Bright';
+}
+
 /* Menyn */							
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -114,20 +123,9 @@ line-height: 1;
 }
 
 
-/* Wrapper Css (innehåll) */
-#wrapper{
-  width:97%;
-  height:auto;
-  background-color: lightblue;
-  margin:20px auto;
-  border: 1px solid #eee;
-  font-family: 'Lucida Bright';
-}
-
-
 /*Content = Funktion sida */
 #content {
-  height:auto;
+  overflow: auto;
   width:100%;
 }
 
@@ -154,8 +152,9 @@ line-height: 1;
 
 #Titel{
 	text-align: center;
-	margin-top: 2%;
-	margin-left: 21%;
+	margin-top: 3%;
+	margin-left: 8%;
+  margin-bottom: 1%;
 	width: 70%;
 	font-family: myFont;
 	font-size: 28px;
@@ -168,34 +167,48 @@ line-height: 1;
 /*boken som helhet*/
 
 #book {
-  width: 87%;
-  margin-top: 5%;
-  margin-left: 16%;
-
+  float: right;
+  width: 80%;
+  height: 585px;
+  background-image: url(book.png);
 
 }
 
 /*Textområde som går att skriva på*/
 textarea{
-		position: absolute;
-		top: 74%;
-		left: 23%;
-		max-height: 58%;
-		max-width: 31%; 
+    float: left;
+    margin-top: 80px;
+    margin-left: 77px;
+    height: 353px;
+    width: 408px;
 		font-family: "Comic Sans MS", sans-serif;
 		font-size: 20px;
 		resize: none;
 		border: none;
 		outline:none;
 		overflow: auto;
-    background-color: transparent;
+    background-color: pink;
 }
 
+/*elementet där du kan släppa alla bilder*/
+
+#dropbox{
+    float:right;
+    height: 449px;
+    width: 442px;
+    margin-right: 57px;
+    margin-top: 23px;
+    background-color: black;   
+}
+
+
+
 #function_button{
-  position: absolute;
-  top: 61%;
-  width: auto;
-  left:-3%;
+  float: left;
+  width: 17%;
+  margin-top: 7%;
+  margin-right: 0%;
+  background-color: green;
 
 }
 
@@ -213,32 +226,21 @@ textarea{
 /*elementet som har alla bilder*/
 
 #picturebox{
-	display: none;
-    margin-top: 50px;
-    width: 1000px;
-    height: auto;
-    margin-left: 18%;
-    margin-bottom: 5px;
+    display: none;
+    float: right;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 78%;
     border: 3px solid black; 
-
-}
-
-/*elementet där du kan släppa alla bilder*/
-
-#dropbox{
-    position: absolute;
-    top: 63%;
-    right: 8%;
-    height: 445px;
-    width: 433px;
-    
 }
 
 /*listan för de olika förändrings alternativen (färg/typsnitt)*/
 
 .change_text_style{
 		list-style-type: none;
-		margin-left: -36px;
+		margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: -23%;
 }
 
 /*knapparna i listan för förändrings alternativen(färg/typsnitt)*/
@@ -252,26 +254,18 @@ textarea{
 /*elementet som innehåller alla olika fonts alternativ*/
 
 #font_text {
-	margin-bottom: 3px;
-  margin-left: 23px;
   display: none;
-
 }
 
 #meny_button {
-	list-style: none;
-	margin: 5px;
-
-
+  float: left;
+  width: 77%;
+  list-style: none;
+  padding-left: 2%;
+  margin-top: 8%;
 }
 
 .list_button{
-	margin: 13%;
-}
-/*css för footer*/
-
-footer{
-	border-top:1px solid #999;
-	text-align:center;
-	clear:both;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }

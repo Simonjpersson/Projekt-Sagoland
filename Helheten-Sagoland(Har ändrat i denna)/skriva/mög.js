@@ -114,3 +114,29 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }
+
+    else{
+        $(elem).detach().appendTo('#picturebox'); 
+    }
+
+    if( 
+
+
+        $(document).ready(function() {
+    // sets draggable the elements with id="im"
+    $('#Girl').draggable({
+    cursor: 'move',        // sets the cursor apperance
+    containment: '#dropbox'});    // sets to can be dragged only within "#drg" element
+  
+  });
+}
+function moveback(elem){
+    $(elem).parent().attr("id") == "dropbox"){
+    $(elem).detach().appendTo('#picturebox');
+}
+
+
+
+          <!--Input text till Sagans namn-->
+          
+          
