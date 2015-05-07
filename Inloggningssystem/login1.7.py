@@ -57,6 +57,9 @@ def createUser():
 '\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b'
 vet inte vilket som är bäst än
 """
+<<<<<<< HEAD
+>>>>>>> parent of b1d66e7... login 1.7
+=======
 >>>>>>> parent of b1d66e7... login 1.7
     def validateEmail(mejl):
         min_len, max_domain = 1,4
