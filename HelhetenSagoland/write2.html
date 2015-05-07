@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sagoland</title>
+		<link href="stylewrite.css" rel="stylesheet" type="text/css">
+		<script src="javascriptwrite.js"></script>
+		<script src="jquery-1.11.2..js"></script>
+		<script src="jquery-ui.js"></script>
+		
+		
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			
+			<header>
+				<img src="commondesign/banner4.jpg" alt="Logga Sagoland" width="100%">
+			</header>
+	
+			<!--meny-->
+			<div id='cssmenu'>
+				<ul> 	
+					
+						<li><a href="contact1.html">Kontakta Oss</a></li>
+						<li class='active'><a href="loggin.html">Skriv Saga</a></li>
+						<li><a href="read.html">Läs Saga</a></li>
+						<li ><a href="index.html">Startsida</a></li>
+					
+				</ul>
+			
+			</div>
+			<section class="content">
+					<div id="function_button">
+						<!--knapparna som gör att elementen med "bilder", "text-färg" & "typsnitt" blir synliga/gömda.-->
+						<ul id="meny_button">
+
+							<li class="list_button"><button onclick="toggle_div_fun('picturebox');">Här finns bilder</button></li>
+
+															<!--Innehåller olika färgval för texten -->
+							<li class="list_button"><button onclick="toggle_div_fun('textchoose');">Välj färg på din text</button></li>
+										
+								
+										<div id="textchoose">
+											
+											<ul class="change_text_style">
+
+												<li><img src="picturewrite/bildcolorchoose/black.png" alt="Färgen svart">
+													<button class="text_style_button" onclick="set_color_black();">Svart</button>
+												</li>
+
+												<li><img src="picturewrite/bildcolorchoose/red.png" alt="Färgen röd">
+													<button class="text_style_button" onclick="set_color_red();">Röd</button>
+												</li>
+
+												<li><img src="picturewrite/bildcolorchoose/blue.png" alt="Färgen blå">
+													<button class="text_style_button" onclick="set_color_blue();">Blå</button>
+												</li>
+
+												<li><img src="picturewrite/bildcolorchoose/orange.png" alt="Färgen orange">
+													<button class="text_style_button" onclick="set_color_orange();">Orange</button>
+												</li>
+
+												<li><img src="picturewrite/bildcolorchoose/pink.png" alt="Färgen rosa">
+													<button class="text_style_button" onclick="set_color_pink();">Rosa</button>
+												</li>
+
+												<li><img src="picturewrite/bildcolorchoose/green.png" alt="Färgen grön">
+													<button class="text_style_button" onclick="set_color_green();">Grön</button>
+												</li>
+
+											</ul>
+										</div>
+
+													<!-- Innehåller de olika font alternativen(bild) & knappar för funktionen -->
+							<li class="list_button"><button onclick="toggle_div_fun('font_text');">Ändra stil på din text</button></li>
+
+												<div id="font_text">
+
+													<ul class="change_text_style">
+
+														<li><img src="picturewrite/bildfonttext/impact.png">
+															<button class="text_style_button" onclick="set_font_impact();">Ändra typsnitt</button>
+														</li>
+
+														<li><img src="picturewrite/bildfonttext/georgia.png">
+															<button class="text_style_button" onclick="set_font_georgia();">Ändra typsnitt</button>
+														</li>
+
+														<li><img src="picturewrite/bildfonttext/algerian.png">
+															<button class="text_style_button" onclick="set_font_algerian();">Ändra typsnitt</button>
+														</li>
+
+														<li><img src="picturewrite/bildfonttext/comic.png">
+															<button class="text_style_button" onclick="set_font_ComicSansMS();">Ändra typsnitt</button>
+														</li>
+
+													</ul>
+												</div>
+
+									<!--Spara sagan och kunna ladda den genom javascript/blob/-->
+							
+							<li class="list_button"><button onclick="saveStoryTextAsFile('');">Spara din saga</button></li>
+							<li class="list_button"><input id="inputFileNameToSaveAs" value="Vad heter din saga"></input></li>
+							<li class="list_button"><button onclick="loadFileAsText()">Ladda en sparad saga</button></li>
+							<li class="list_button"><input type="file" id="fileToLoad"></li>
+						</ul>		
+					</div>
+
+				<!--Hela bokens innehåll!-->
+						<input type="text" maxlength="55" id="Titel" value="Vad heter din saga?">
+		
+						<!--Hela bokens element!-->
+
+						<div id="book">
+
+								<!--Textarea som du skriver din text i, på bokens vänstra sida-->
+
+								<textarea id="story_text" rows="24" cols="55" maxlength="500">Skriv din text här!</textarea>
+									
+									<!--Dropp elementet på bokens högrasida! enbart ett tomt div element-->
+
+									<div id="dropbox">
+
+									</div>	
+						</div>
+
+							<!-- Elementet som innehåller alla bilder och gör det möjligt att dra ifrån -->
+							
+							<div id="picturebox">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/girl.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/boy.png" ondblclick="moveImg(this)">
+
+								<img class="move_image"src="picturewrite/bildpicturebox/Bull.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/tree.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/cat.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/car.png"ondblclick="moveImg(this)">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/firetruck.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/witch.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/sun.png" ondblclick="moveImg(this)">
+
+								<img class="move_image" src="picturewrite/bildpicturebox/house.png" ondblclick="moveImg(this)">
+							</div>	
+			</section>					
+		</div>
+	</body>
+</html>
