@@ -100,7 +100,6 @@ a:hover > .right {
   width: 17%;
   margin-top: 7%;
   margin-right: 0%;
-  background-color: green;
 
 }
 
@@ -188,7 +187,7 @@ textarea{
     border: none;
     outline:none;
     overflow: auto;
-    background-color: pink;
+    background-color: transparent;
 }
 
 /*elementet där du kan släppa alla bilder*/
@@ -198,7 +197,7 @@ textarea{
     width: 442px;
     margin-right: 57px;
     margin-top: 23px;
-    background-color: black;   
+    background-color: transparent;   
 }
 
 /*elementet som har alla bilder*/
