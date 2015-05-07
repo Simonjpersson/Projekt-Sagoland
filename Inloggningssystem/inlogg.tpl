@@ -43,8 +43,12 @@
 						<p><label for "mejl">E-postadress:</label></p>
 						<p><input type = "text" name = "mejl"></p>
 
-						<p><label for "password">Lösenord:</label></p>
-						<p><input type = "text" name = "password"></p>
+						<p><label for "password1">Lösenord:</label></p>
+						<p><input type = "text" name = "password1"></p>
+
+
+						<p><label for "password2">Bekräfta lösenord:</label></p>
+						<p><input type = "text" name = "password2"></p>
 
 						<p><input type = "submit" value = "Spara"></p>		
 
