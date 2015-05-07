@@ -3,24 +3,14 @@
 import sys, smptlib, re
 from bottle import get, post, request, run
 import re
-global username, firstname, lastname, mejl, age, adress, password1, password2
+
 
 
 """Denna metoden ska registrera användare 
 """
 @route("/registreraAnvandare/", metodh="POST")
 def createUser():
-   """
-     username = raw_input('Ange ett användarnamn')
-    firstname = raw_input('Ange ditt förnamn')
-    lastname = raw_input('Ange ditt efternamn')
-    mejl = raw_input('Ange din email')
-    age = raw_input('Ange din ålder') #behöver vi de?
-    adress = raw_input('Ange din adress')
-    password1 = raw_input('Ange ett lösenord')
-    password2 = raw_input('Ange lösenordet igen')
-     """
-
+   global username, firstname, lastname, mejl, age, adress, password1, password2
     str(firstname)
     str(lastname)
 

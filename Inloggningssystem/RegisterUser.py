@@ -1,15 +1,15 @@
 # -*- coding: cp1252 -*-
 import sys, smptlib, re
-from bottle import get, post, request, run, route, request, static_file
+from bottle import get, post, request, run, route, request, static_file, template
 import re
 
 
 
 """Denna metoden ska registrera användare 
 """
-@route("/registreraAnvandare/", metodh="POST")
+@route('/')
 def createUser():
-   global username, firstname, password1, password2
+ """  global username, firstname, password1, password2
     username.lower()
     mejl.lower()
     adress.lower()
@@ -22,9 +22,10 @@ def createUser():
             print "the password match"
             return True 
         else:
-            return "Lösenordet matchar ej"
+            return "Lösenordet matchar ej" """
+     return template("inlogg")
         
-    
+
     
 
     """        
@@ -36,3 +37,5 @@ def createUser():
         else
             return False
         mejl = raw_input('skriv email igen') """
+
+run(debug True, reloader = True, host = 'localhost', port = 8080)
