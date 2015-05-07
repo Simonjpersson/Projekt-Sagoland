@@ -1,0 +1,4 @@
+<p>Det här är Emma. Emma är 5 år och gillar att rita.</p> 
+<p>Emmas katt heter Kattis. Katten Kattis gillar också att rita.</p> 
+<p>I alla fall om man får tro Emma.</p>
+<p>Katten Kattis himlar med ögonen och fortsätter sin eftermiddagslur.</p>
