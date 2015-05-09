@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Sagoland</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="/static/style.css" rel="stylesheet" type="text/css">
 		<script src="javascript.js" type="text/javascript"></script>
 	</head>
 	
@@ -11,7 +11,7 @@
 	<div id="wrapper">
 		<header>
 	
-			<img src="static/commondesign/banner4.jpg" alt="Logga Sagoland" width="100%">
+			<img src="static/banner4.jpg" alt="Logga Sagoland" width="100%">
 								
 		</header>
 		
@@ -35,7 +35,7 @@
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
 				<section class="left"><p></p></section>
 								
-				<a href="FMDMK-names.html" id="content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-names" id="content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
@@ -44,7 +44,7 @@
 				</section>
 
 				<section id="contentright">
-					<img src="FMDMK/Frontpage.png" alt="Flickan med de magiska kritorna" class="storyimages">
+					<img src="/static/Frontpage.png" alt="Flickan med de magiska kritorna" class="storyimages">
 				</section>	
 				
 

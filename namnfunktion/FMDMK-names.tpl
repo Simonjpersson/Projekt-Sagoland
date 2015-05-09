@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Sagoland</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="/static/style.css" rel="stylesheet" type="text/css">
 		<script src="javascript.js" type="text/javascript"></script>
 	</head>
 	
@@ -11,7 +11,7 @@
 	<div id="wrapper">
 		<header>
 	
-			<img src="commondesign/banner4.jpg" alt="Logga Sagoland" width="100%">
+			<img src="/static/banner4.jpg" alt="Logga Sagoland" width="100%">
 								
 		</header>
 		
@@ -34,9 +34,9 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-front.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-front" id="content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-1.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-1" id="content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
@@ -51,14 +51,16 @@
 
 				<section id="contentright">
 					<p>
-						<img src="FMDMK/emma-name.png" alt="Flickan Emma" class="storyimages">
-						<img src="FMDMK/Kattis-name.png" alt="Katten Kattis" class="storyimages">
+						<img src="/static/emma-name.png" alt="Flickan Emma" class="storyimages">
+						<img src="/static/Kattis-name.png" alt="Katten Kattis" class="storyimages">
 					</p>
 					<form>
-						<input type="text" name="name1" value= "Emma">
-						<input type="text" name="name2" value= "Kattis">
-						<img src="FMDMK/Okej-knapp.png" alt="Okej" class="storyimages" id="okej-knapp">
+						<input type="text" name="chosenname1" value= "Emma">
+						<input type="text" name="chosenname2" value= "Kattis">
+						<input type="button" value= "Starta äventyret!">
 					</form>
+					<p>chosenname1</p>
+					<p>chosenname2</p>
 				</section>	
 				
 

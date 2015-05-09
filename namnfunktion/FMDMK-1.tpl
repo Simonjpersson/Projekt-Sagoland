@@ -38,9 +38,9 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-names.html" id="content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-names" id="content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-2.html" id="content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-2" id="content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
@@ -49,7 +49,7 @@
 				</section>
 
 				<section id="contentright">
-					<p>{{text}}
+					<p>{{text}}</p>
 				</section>	
 				
 

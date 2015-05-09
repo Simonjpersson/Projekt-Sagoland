@@ -24,30 +24,23 @@ def story_fmdmk_front():
 @route('/FMDMK-names')
 def story_fmdmk_names():
     """Flickan med de magiska kritorna - välja nytt namn"""
+    
+    
     return template("FMDMK-names")
 
 
 @route('/FMDMK-1')
 def story_fmdmk_1():
     """Flickan med de magiska kritorna - sida 1"""
+    """Funktionen öppnar textfilen för sidan och söker upp name1 och name2."""
+    """När den hittar dessa ord ersätter den dem med vad användaren matat in på namnsidan."""
     textfile = open("text/Sida1.txt", "r")
-    
-    
-     
-    
-    m = textfile.read()
-    text = m.replace('name1','Julia') '''and('name2','Buster')'''
-    
-    
-    '''replacements = {'name1':'Pernilla', 'name2':'Krysmynta'}
-    for name1 in textfile:
-        for src, target in replacements.iteritems():
-            name1 = name1.replace(src, target)'''
+       
+    searchname1 = textfile.read()
+    searchname2 = searchname1.replace('name1','Emma')
+    text = searchname2.replace('name2','Kattis')
     
     textfile.close()
-    
-    
-    
     
     return template("FMDMK-1", text=text)
 
