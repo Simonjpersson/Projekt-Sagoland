@@ -31,7 +31,7 @@ def createUser():
     adress.lower()
 
     
-<<<<<<< HEAD
+
     username = request.forms.username
     firstname = request.forms.firstname
     lastname = request.forms.lastname
@@ -48,7 +48,6 @@ def createUser():
             return "Lösenordet matchar ej"
             
     
-=======
 
 """ /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.
 
@@ -57,10 +56,7 @@ def createUser():
 '\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b'
 vet inte vilket som är bäst än
 """
-<<<<<<< HEAD
->>>>>>> parent of b1d66e7... login 1.7
-=======
->>>>>>> parent of b1d66e7... login 1.7
+
     def validateEmail(mejl):
         min_len, max_domain = 1,4
        symbols = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.'  

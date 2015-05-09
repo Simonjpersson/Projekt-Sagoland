@@ -23,7 +23,7 @@ def createUser():
             return True 
         else:
             return "Lösenordet matchar ej" """
-     return template("inlogg")
+        return template("inlogg")
         
 
     
