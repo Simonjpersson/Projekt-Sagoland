@@ -8,8 +8,9 @@ function toggle_div_fun(id) {
 		divelement.style.display = 'block';
 }
 
-/*-- När du dubbelklickar på bilden så flyttar den upp till droppbox*/
 function moveImg(e){
+	$(e).css({ "position": "relative", "top": "auto", "bottom": "auto", "left": "auto", "right": "auto" });
+
     if( $(e).parent().attr("id") == "picturebox" ){
         $(e).detach().appendTo('#dropbox');
     }
@@ -24,7 +25,6 @@ function moveImg(e){
   
 	});
 }
-
 
 
 

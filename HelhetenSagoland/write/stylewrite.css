@@ -98,8 +98,8 @@ a:hover > .right {
 #function_button{
   float: left;
   width: 17%;
-  margin-top: 7%;
-  margin-right: 0%;
+  margin-top: 125px;
+  margin-left: 23px;
 
 }
 
@@ -107,27 +107,12 @@ a:hover > .right {
 
 #meny_button {
   float: left;
-  width: 77%;
+  width: 78%;
   list-style: none;
   padding-left: 2%;
   margin-top: 8%;
-}
-
-/*listan för de olika förändrings alternativen (färg/typsnitt)*/
-
-.change_text_style{
-    list-style-type: none;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    margin-left: -23%;
-}
-
-/*knapparna i listan för förändrings alternativen(färg/typsnitt)*/
-
-.text_style_button{
-    position: absolute;
-    margin-left: 6px;
-    margin-top: 6px;
+  border-radius: 29px;
+  background-color: #BE008A;
 }
 
 /*elementet som innehåller alla olika fonts alternativ*/
@@ -141,15 +126,24 @@ a:hover > .right {
 .list_button{
   margin-bottom: 10%;
   margin-top: 10%;
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #BE008A;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    border-radius: 29px;
+}
+
+.list_button:hover, .list_button:active {
+  background-color: #7C005A;
 }
 
 /*elementet för val av färger*/
 #textchoose{
-    width: 45%;
-    height: auto;
-    margin-left: -20px;
     display: none;
-
+    list-style-type: none;
 }
 
 /*Namnet på sagan som är ett input element*/
@@ -207,8 +201,12 @@ textarea{
     margin-bottom: 3%;
     margin-top: 3%;
     margin-right: 5px;
-    width: 78%;
-    border: 3px solid black; 
+    width: 78%; 
+    background-color: #3E97D1;
+    border-radius: 29px;
+    border-style: solid;
+    border-color: black;
+
 }
 
 /* Menyn */							

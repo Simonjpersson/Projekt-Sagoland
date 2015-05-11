@@ -140,3 +140,51 @@ function moveback(elem){
           <!--Input text till Sagans namn-->
           
           
+
+
+/*-- När du dubbelklickar på bilden så flyttar den upp till droppbox*/
+function moveImg(e){
+    if( $(e).parent().attr("id") == "picturebox" ){
+        $(e).detach().appendTo('#dropbox');
+    }
+    else{
+        $(e).detach().appendTo('#picturebox'); 
+    }
+    /*-- gör så att bilden går att flytta på */
+    $(document).ready(function() {
+      $('.move_image').draggable({
+      cursor: 'move',
+      containment: '#dropbox'});
+  
+  });
+}
+
+function moveImg(e){
+    // Clear position properties added by dregging
+    $(e).css({ "top": "auto", "bottom": "auto", "left": "auto", "right": "auto" });
+    
+    if( $(e).parents("#picturebox").length != 0 ){
+        $(e).detach().appendTo('#dropbox');
+    }
+    else if( $(e).parents("#dropbox").length != 0 ){
+        $(e).detach().appendTo('#picturebox'); 
+    }
+}
+
+$(document).ready(function() {
+    $('.move_image').draggable({
+        cursor: 'move',
+        containment: '#dropbox'});
+    $(document).on('dblclick.move_image', function(){
+        moveImg($(this));
+    });
+});
+
+
+
+
+ ondblclick="moveImg(this)"
+
+
+
+ onclick="toggle_div_fun('picturebox');
