@@ -2,6 +2,8 @@
 from bottle import get, post, request, run, static_file, template, route
 import re, sys
 
+from bottle import response
+
 @route('/static/<filename>')
 def serve_static(filename):
     """Lägger in CSS-filen samt bilderna"""
