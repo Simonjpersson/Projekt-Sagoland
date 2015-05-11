@@ -98,6 +98,15 @@ def index(name):
 run(host='localhost', port=8080)
 
 
+  """        
+    def validateEmail(mejl):
+        min_len, max_domain = 1,4
+        symbols = '/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/.'  
+        if re.match(symbols, mejl) 
+            return True
+        else
+            return False
+        mejl = raw_input('skriv email igen') """
 
 
     

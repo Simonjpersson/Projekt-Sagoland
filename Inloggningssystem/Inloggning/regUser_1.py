@@ -7,7 +7,7 @@ def serve_static(filename):
     """Lägger in CSS-filen samt bilderna"""
     return static_file(filename, root ="static")
 
-@route('/')
+@route('/loggain', method = "POST")
 def runpage():
     return template("loggain")
     
@@ -61,7 +61,7 @@ Det kan skrivas in här iaf"""
 def usersHomepage():
     global username
 
-    return template("/", username = username)'''
+    return template("/", username = username) '''
 
 run(debug = True, reloader = True, host = 'localhost', port = 8080)
 
