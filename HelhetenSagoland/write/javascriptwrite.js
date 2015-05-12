@@ -1,4 +1,4 @@
-/*-- Funktionen som döljer bilder! */
+/*-- Funktionen som klickar fram bilderna till sagan och döljer dem! */
 function toggle_div_fun(id) {
 
 	var divelement = document.getElementById(id)
@@ -8,75 +8,62 @@ function toggle_div_fun(id) {
 		divelement.style.display = 'block';
 }
 
-function moveImg(e){
-	$(e).css({ "position": "relative", "top": "auto", "bottom": "auto", "left": "auto", "right": "auto" });
+/* JQ för att kunna skicka bilderna till och från DIV, samt dra i bilderna */
+$(document).ready(function() {
+    
+    var moveImg = function (e){
+        var $el = $(e);
+        var $dropbox = $('#dropbox');
+        
+        /* Tar bort positioneringen på bilderna */
 
-    if( $(e).parent().attr("id") == "picturebox" ){
-        $(e).detach().appendTo('#dropbox');
-    }
-    else{
-        $(e).detach().appendTo('#picturebox'); 
-    }
-    /*-- gör så att bilden går att flytta på */
-    $(document).ready(function() {
-  		$('.move_image').draggable({
-    	cursor: 'move',
-    	containment: '#dropbox'});
-  
-	});
-}
+        $el.css({ "top": "auto", "bottom": "auto", "left": "auto", "right": "auto" });
+        
+        if( $el.parents("#picturebox").length !== 0 ){
+            $el.detach().appendTo('#dropbox');
+            
+            /* postitioneringen inom dropbox diven som top-bot/höjd-bred. */
+            
+            var dropbox_bottom = $dropbox.offset().top + $dropbox.height();
+            var dropbox_right = $dropbox.offset().left + $dropbox.width();
+            if ( $el.offset().top + $el.height() > dropbox_bottom ||
+                $el.offset().left + $el.width() > dropbox_right ) {
+                
+                /* Z-indexet som gör det möjligt att img kan ligga ovanpå varandra inom div elementet för att undvika "overflow" */ 
+                
+                $el.css("z-index", "+=1");
+                $el.offset({ 
+                    top: dropbox_bottom - $el.height(),
+                    right: $dropbox.offset().left          
+                });
+            }
+        }
+        /* Z-indexet som gör det möjligt att img kan ligga ovanpå varandra inom div elementet för att undvika "overflow" */
+        else if( $el.parents("#dropbox").length !== 0 ){
+            $el.detach().appendTo('#picturebox'); 
+            
+            $el.css("z-index", "auto");
+        }
+    };
+    /* gör så att img kan dras inom div elementet dropbox*/
+
+    $('.move_image').draggable({
+        cursor: 'move',
+        containment: '#dropbox'
+    });
+    /* Måste ha för att divdropbox ska kunna taemot bilderna */
+    $('#dropbox').droppable({
+        
+    });    
+    /* När du dbclickar körs funktionen move_image = flytta img och sedan dra i dropbox */
+    $(document).on('dblclick', '.move_image', function(){
+        moveImg($(this));
+    });
+    
+});
 
 
-
-function saveStoryTextAsFile(){
-
-	var textToWrite = document.getElementById("story_text").value;
-	var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
-	var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
-
-	var downloadLink = document.createElement("a");
-	downloadLink.download = fileNameToSaveAs;
-	downloadLink.innerHTML = "Download File";
-	if (window.webkitURL != null)
-
-	{
-		/* behöver för att chrome ska tillåta den att fungera*/
-
-		downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
-	}
-	else
-	{
-		// Vid Firefox måste länken för att lägga till DOM innan man kan klicka */
-
-		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-		downloadLink.onclick = destroyClickedElement;
-		downloadLink.style.display = "none";
-		document.body.appendChild(downloadLink);
-	}
-
-	downloadLink.click();
-}
-
-function destroyClickedElement(event)
-{
-	document.body.removeChild(event.target);
-}
-
-function loadFileAsText()
-{
-	var fileToLoad = document.getElementById("fileToLoad").files[0];
-
-	var fileReader = new FileReader();
-	fileReader.onload = function(fileLoadedEvent) 
-	{
-		var textFromFileLoaded = fileLoadedEvent.target.result;
-		document.getElementById("inputTextToSave").value = textFromFileLoaded;
-	}
-
-	fileReader.readAsText(fileToLoad, "UTF-8");
-}
-
-/*-- Alla färger du kan välja på för att ändra texten! */
+/*-- Alla färger du kan välja på för att ändra texten! startar igenom klick event i HTML anroppar funktionen*/
 
 
 function set_color_red(id) {
