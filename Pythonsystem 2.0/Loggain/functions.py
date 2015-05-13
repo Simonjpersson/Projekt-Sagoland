@@ -24,6 +24,7 @@ def runpage():
 
 """ username är satt som unik i databasen"""
     if(password1 == password2):
+        """ validerar email med hjälp av validate_email från pip """
         if validate_email(mejl, verify = True):            
             con = mysql.connector.connect(host='localhost', database ='sagoland')
             cursor = con.cursor()
@@ -73,7 +74,7 @@ def editUser():
     password1 = request.forms.password1
     password2 = request.forms.password2
     if username and password1 == "SELECT username, password1 FROM user":
-        "INSER INTO user"  "(username, mejl, password1)" "VALUES(%s, %s, %s,)"(username, mejl, password1))ON DUPLICATE KEY UPDATE username = username   
+        "INSER INTO user""(username, mejl, password1)" "VALUES(%s, %s, %s,)"(username, mejl, password1))ON DUPLICATE KEY UPDATE username = username   
        
      return template("/", username=username, mejl=mejl, password1=password1, password2=password2)
 
