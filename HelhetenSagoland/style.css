@@ -198,6 +198,12 @@ footer{
 
 }
 
+/*Bilder storlek*/
+.full{
+width:100%;
+}
+
+
 /* Responsiv */	
 @media (max-width: 600px){
 	section{
