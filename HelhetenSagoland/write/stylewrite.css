@@ -148,6 +148,14 @@ a:hover > .right {
     list-style-type: none;
 }
 
+.color_size{
+    width: 95px;
+    height: 30px;
+}
+
+.full{
+  width: 100%;
+}
 /*Namnet på sagan som är ett input element*/
 #Titel{
   text-align: center;

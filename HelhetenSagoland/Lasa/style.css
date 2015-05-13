@@ -4,10 +4,10 @@ body{
 }
 #wrapper{
 	width:90%;
-	height:auto;
+	height:900px;
 	margin:20px auto;
-	background-color: lightblue;
-	border: 1px solid #eee;
+	background-color:#EBD7FF;
+	border: 3px solid #eee;
 	font-family: 'Lucida Bright';
 }
 
@@ -46,7 +46,7 @@ font-family: Raleway, sans-serif;
 line-height: 1;
 }
 #cssmenu ul {
-  background: #85E085;
+  background: #FFFFFF;
 }
 #cssmenu > ul > li {
   float: right;
@@ -105,10 +105,12 @@ line-height: 1;
   transform: perspective(5px) rotateX(2deg);
   transform-origin: bottom;
 }
-#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li.active > a:after{
+background: #EBD7FF;
+}
 #cssmenu > ul > li:hover > a:after,
 #cssmenu > ul > li > a:hover:after {
-  background: lightblue;
+  background: #BFAFCF;
 }		
 
 	/*Hela boken*/
@@ -201,6 +203,9 @@ a:hover > .right {
 /*Inställningar för alla bilder som läggs i boken*/
 .storyimages {
 	
+}
+.full{
+width: 100%;
 }
 
 #okej-knapp {
