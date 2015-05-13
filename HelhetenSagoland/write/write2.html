@@ -16,7 +16,7 @@
 		<div id="wrapper">
 			
 			<header>
-				<img src="commondesign/banner4.jpg" alt="Logga Sagoland" width="100%">
+				<img class="full" src="commondesign/banner4.jpg" alt= "Logga Sagoland">
 			</header>
 	
 			<!--meny-->
@@ -37,36 +37,38 @@
 						<!--knapparna som gör att elementen med "bilder", "text-färg" & "typsnitt" blir synliga/gömda.-->
 						<ul id="meny_button">
 
-							<li class="list_button" onclick="toggle_div_fun('picturebox')";><p>Bilder till Sagan</p></li>
+							<li class="list_button" onclick="toggle_div_fun('picturebox');">
+							<p>Bilder till Sagan</p>
+							</li>
 
 															<!--Innehåller olika färgval för texten -->
-							<li class="list_button" onclick="toggle_div_fun('textchoose');"><p>Ändra färg på din text</p></li>
+							<li class="list_button" onclick="toggle_div_fun('textchoose');">
+							<p>Ändra färg på din text</p> 
+							</li>
 										
-								
-										<div>
-											
+										<li>
 											<ul id="textchoose">
 
-												<li><img src="picturewrite/bildcolorchoose/black.png" alt="Färgen svart" width= "95px" height= "30px" onclick="set_color_black();"></li>
+												<li><img class= "color_size" src="picturewrite/bildcolorchoose/black.png" alt="Färgen svart" onclick="set_color_black();"></li>
 
-												<li><img src="picturewrite/bildcolorchoose/red.png" alt="Färgen röd" width= "95px" height= "30px" onclick="set_color_red();"></li>
+												<li><img class= "color_size" src="picturewrite/bildcolorchoose/red.png" alt="Färgen röd" onclick="set_color_red();"></li>
 
-												<li><img src="picturewrite/bildcolorchoose/blue.png" alt="Färgen blå" width= "95px" height= "30px" onclick="set_color_blue();"></li>
+												<li><img class= "color_size" src="picturewrite/bildcolorchoose/blue.png" alt="Färgen blå" onclick="set_color_blue();"></li>
 
-												<li><img src="picturewrite/bildcolorchoose/orange.png" alt="Färgen orange" width= "95px" height= "30px" onclick="set_color_orange();"></li>
+												<li><img class= "color_size" src="picturewrite/bildcolorchoose/orange.png" alt="Färgen orange" onclick="set_color_orange();"></li>
 
-												<li><img src="picturewrite/bildcolorchoose/pink.png" alt="Färgen rosa"width= "95px" height= "30px" onclick="set_color_pink();"></li>
+												<li><img class= "color_size" src="picturewrite/bildcolorchoose/pink.png" alt="Färgen rosa" onclick="set_color_pink();"></li>
 
-												<li><img src="picturewrite/bildcolorchoose/green.png" alt="Färgen grön" width= "95px" height= "30px" onclick="set_color_green();"></li>
+												<li><img class= "color_size" src="picturewrite/bildcolorchoose/green.png" alt="Färgen grön" onclick="set_color_green();"></li>
 
 											</ul>
-										</div>
+										</li>
 
 													<!-- Innehåller de olika font alternativen(bild) & knappar för funktionen -->
-							<li class="list_button"onclick="toggle_div_fun('font_text');"><p>Ändra uteseende på din text</p></li>
-
-												<div>
-
+							<li class="list_button" onclick="toggle_div_fun('font_text');">
+							<p>Ändra uteseende på din text</p>
+							</li>
+												<li>
 													<ul id="font_text">
 
 														<li><img src="picturewrite/bildfonttext/impact.png" alt="typsnitt-Impact" onclick="set_font_impact();"></li>
@@ -76,9 +78,8 @@
 														<li><img src="picturewrite/bildfonttext/algerian.png" alt="typsnitt-Algerian" onclick="set_font_algerian();"></li>
 
 														<li><img src="picturewrite/bildfonttext/comic.png" alt="typsnitt-Comic" onclick="set_font_ComicSansMS();"></li>
-
 													</ul>
-												</div>
+												</li>	
 
 									<!--Spara sagan och kunna ladda den genom javascript/blob/-->
 
@@ -108,25 +109,25 @@
 							<div id="picturebox">
 								
 
-								<img class="move_image" src="picturewrite/bildpicturebox/girl.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/girl.png" alt="Bild på Anja">
 
-								<img class="move_image" src="picturewrite/bildpicturebox/boy.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/boy.png" alt="Bild på en pojke">
 
-								<img class="move_image"src="picturewrite/bildpicturebox/Bull.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/Bull.png" alt="Bild på en tjur">
 
-								<img class="move_image" src="picturewrite/bildpicturebox/tree.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/tree.png" alt="Bild på ett träd">
 
-								<img class="move_image" src="picturewrite/bildpicturebox/cat.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/cat.png" alt="Bild på en katt">
 
-								<img class="move_image" src="picturewrite/bildpicturebox/car.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/car.png" alt="Bild på en bil">
 
-								<img class="move_image" src="picturewrite/bildpicturebox/firetruck.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/firetruck.png" alt=" Bild på en brandbil">
 
-								<img class="move_image" src="picturewrite/bildpicturebox/witch.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/witch.png" alt=" Bild på en häxa">
 
-								<img class="move_image" src="picturewrite/bildpicturebox/sun.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/sun.png" alt=" Bild på en sol">
 
-								<img class="move_image" src="picturewrite/bildpicturebox/house.png">
+								<img class="move_image" src="picturewrite/bildpicturebox/house.png" alt=" Bild på ett hus">
 							</div>	
 			</section>					
 		</div>
