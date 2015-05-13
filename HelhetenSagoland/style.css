@@ -7,7 +7,7 @@ body{
 	width:90%;
 	height:900px;
 	margin:20px auto;
-	background-color: lightblue;
+	background-color:#EBD7FF;
 	border: 3px solid #eee;
 	font-family: 'Lucida Bright';
 }
@@ -86,7 +86,7 @@ font-family: Raleway, sans-serif;
 line-height: 1;
 }
 #cssmenu ul {
-  background: #85E085;
+  background: #FFFFFF;
 }
 #cssmenu > ul > li {
   float: right;
