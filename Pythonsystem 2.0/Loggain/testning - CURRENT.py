@@ -9,12 +9,12 @@ def serve_static(filename):
     """Lägger in CSS-filen samt bilderna"""
     return static_file(filename, root ="static")
 
-@route("/loggain/")
+"""@route("/")
 def runpage():
     bottle.TEMPLATE_PATH.insert(0,'/absolut/path/to/templates/')
-    return template("loggain")
+    return template("loggain")"""
 
-"""@route("/", method = "POST")
+@route("/", method = "GET")
 def registerUser():
     global username, mejl, password1, password2
     username = request.forms.username
@@ -22,8 +22,5 @@ def registerUser():
     password1 = request.forms.password1
     password2 = request.forms.password2
 
-    if(password1 == password2): """
-        
-
-
-run(debug=True, host='localhost', port=8080, reloader=True)
+    if(password1 == password2):
+        run(debug=True, host='localhost', port=8080, reloader=True)
