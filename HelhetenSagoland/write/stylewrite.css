@@ -1,4 +1,4 @@
-/*Importerad font*/
+﻿/*Importerad font*/
 
 @font-face {
 		font-family: myFont;
@@ -16,7 +16,7 @@ body{
 /* Wrapper Css (innehåll) */
 #wrapper{
   height:auto;
-  background-color: lightblue;
+  background-color: #EBD7FF;
   margin:20px auto;
   border: 1px solid #eee;
   font-family: 'Lucida Bright';
@@ -26,7 +26,7 @@ body{
 
 #wrapper_start{
   height: 900px;
-  background-color: lightblue;
+  background-color: #EBD7FF;
   margin:20px auto;
   border: 1px solid #eee;
   font-family: 'Lucida Bright';
@@ -100,7 +100,7 @@ a:hover > .right {
   width: 17%;
   margin-top: 125px;
   margin-left: 23px;
-  cursor: pointer; cursor: hand;
+  cursor: pointer; 
 
 }
 
@@ -220,7 +220,6 @@ textarea{
 }
 
 /* Menyn */							
-@import url(http://fonts.googleapis.com/css?family=Raleway);
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -252,7 +251,7 @@ font-family: Raleway, sans-serif;
 line-height: 1;
 }
 #cssmenu ul {
-  background: #85E085;
+  background: #FFFFFF;
 }
 #cssmenu > ul > li {
   float: right;
@@ -314,7 +313,7 @@ line-height: 1;
 #cssmenu > ul > li.active > a:after,
 #cssmenu > ul > li:hover > a:after,
 #cssmenu > ul > li > a:hover:after {
-  background: lightblue;
+  background: #BFAFCF;
 }
 
 

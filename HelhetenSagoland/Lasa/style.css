@@ -197,7 +197,6 @@ a:hover > .right {
 		height: 69%;
 		resize: none;
 }
-=======
 /*Inställningar för alla bilder som läggs i boken*/
 .storyimages {
 	
@@ -211,19 +210,13 @@ width: 100%;
 }
 
 
-
-
-
-
-	
->>>>>>> origin/master
 	
 
 #wrapper{
 	width:90%;
 	height:auto;
 	margin:20px auto;
-	background-color: lightblue;
+	background-color: #EBD7FF;
 	border: 1px solid #eee;
 	font-family: 'Lucida Bright';
 }
