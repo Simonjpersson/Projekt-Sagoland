@@ -23,7 +23,7 @@ def runpage():
     password2 = request.forms.password2
 
 """ username är satt som unik i databasen"""
-if(password1 == password2):
+    if(password1 == password2):
         """ validerar email med hjälp av validate_email från pip """
         if validate_email(mejl, verify = True):            
             con = mysql.connector.connect(host='localhost', database ='sagoland')
