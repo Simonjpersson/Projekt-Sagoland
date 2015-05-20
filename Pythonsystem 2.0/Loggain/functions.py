@@ -3,7 +3,7 @@ from bottle import route, run, template, request, static_file
 import re, sys, mysql.connector
 import getpass
 import smtplib
-from validate_email import validate_email
+"""from validate_email import validate_email"""
 
 """Puts in CSS-files and pics"""
 @route('/static/<filename>')
@@ -48,7 +48,7 @@ def regUsers():
 
 
 """User logs in and is then directed to the write-page """
-@route("/loggain"/, method="POST")
+@route("/loggain/", method="POST")
 def signIn():
     global username
 

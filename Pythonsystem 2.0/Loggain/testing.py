@@ -1,6 +1,6 @@
 from bottle import route, run, template, request, static_file
-import mysql.connector
-from validate_email import validate_email
+#import mysql.connector
+"""from validate_email import validate_email"""
 
 """Puts in CSS-files and pics"""
 @route('/static/<filename>')
@@ -18,5 +18,7 @@ def handelsUsers():
 def homepage():
 
     return template("index")
+
+
 
 run(reloader=True, debug=True, host="localhost", port =8080)
