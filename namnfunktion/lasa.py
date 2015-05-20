@@ -29,20 +29,23 @@ def story_fmdmk_names():
     return template("FMDMK-names")
 
 
-@route('/FMDMK-1')
+@route('/FMDMK-1', method='POST')
 def story_fmdmk_1():
     """Flickan med de magiska kritorna - sida 1"""
     """Funktionen öppnar textfilen för sidan och söker upp name1 och name2."""
     """När den hittar dessa ord ersätter den dem med vad användaren matat in på namnsidan."""
+    name1 = request.forms.name1
+    name2 = request.forms.name2
+
     textfile = open("text/Sida1.txt", "r")
        
     searchname1 = textfile.read()
-    searchname2 = searchname1.replace('name1','Emma')
-    text = searchname2.replace('name2','Kattis')
+    searchname2 = searchname1.replace('name1',name1)
+    text = searchname2.replace('name2',name2)
     
     textfile.close()
     
-    return template("FMDMK-1", text=text)
+    return template("FMDMK-1", name1=name1, name2=name2)
 
     
 

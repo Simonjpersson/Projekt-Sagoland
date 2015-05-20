@@ -49,11 +49,22 @@
 				</section>
 
 				<section id="contentright">
+					<p>{{name1}}</p>
+					<p>{{name2}}</p>
 					<p>{{text}}</p>
 				</section>	
 				
 
 			</section>
+
+
+
+
+
+			tis 2 juni 14:15-21
+			tors 16-21:15
+
+			tis 8:45-14:15
 
 
 

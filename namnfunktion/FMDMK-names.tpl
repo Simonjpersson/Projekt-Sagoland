@@ -36,16 +36,16 @@
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
 				<a href="FMDMK-front" id="content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-1" id="content"><section class="right"><p></p></section></a>
+				<section class="right"><p></p></section>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
 					<h2>Vill du byta namn på huvudkaraktärerna?</h2>
 					<p><b>Ja!</b></p>
-					<p>Fyll i nya namn och klicka på Okej-knappen. Sagan kommer nu starta med dina egna påhittade namn på huvudkaraktärerna! </p>
+					<p>Fyll i nya namn och klicka på 'Starta äventyret' med dina egna påhittade namn på huvudkaraktärerna! </p>
 					<p><b>Nej!</b></p>
-					<p>Klicka dig vidare på sidan så startar sagan med deras riktiga namn.</p>	
+					<p>Klicka direkt på 'Starta äventyret'.</p>	
 					
 				</section>
 
@@ -54,13 +54,14 @@
 						<img src="/static/emma-name.png" alt="Flickan Emma" class="storyimages">
 						<img src="/static/Kattis-name.png" alt="Katten Kattis" class="storyimages">
 					</p>
-					<form>
-						<input type="text" name="chosenname1" value= "Emma">
-						<input type="text" name="chosenname2" value= "Kattis">
-						<input type="button" value= "Starta äventyret!">
+					<form action = "/FMDMK-1" method = "POST">
+						<p><label for "name1">Namn på flickan:</label></p>
+						<input type="text" name="name1">
+						<p><label for "name1">Namn på katten:</label></p>
+						<input type="text" name="name2">
+						<input type="submit" value= "Starta äventyret!">
 					</form>
-					<p>chosenname1</p>
-					<p>chosenname2</p>
+					
 				</section>	
 				
 
