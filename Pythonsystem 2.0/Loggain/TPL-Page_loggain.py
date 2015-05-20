@@ -19,7 +19,7 @@ def handelsUsers():
 
 
     
-@post('/loggain')
+@route('/')
 def registerUser():
     global username, mejl, password1, password2
     username = request.forms.username
