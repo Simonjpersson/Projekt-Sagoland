@@ -151,3 +151,12 @@ line-height: 1;
 #cssmenu > ul > li > a:hover:after {
   background: #BFAFCF;
 }
+
+
+/*centerar texten*/
+
+h1{
+text-align:center;
+}
+.full{
+text-align: center;}
