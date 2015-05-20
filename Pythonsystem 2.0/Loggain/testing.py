@@ -19,3 +19,4 @@ def homepage():
 
     return template("index")
 
+run(reloader=True, debug=True, host="localhost", port =8080)
