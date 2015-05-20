@@ -20,9 +20,10 @@ def homepage():
     return template("index")
 
 
-@route("")
+@route("/contact1/")
 def contactus():
 
-    return template("")
+    return template("contact1.tpl")
 
 run(reloader=True, debug=True, host="localhost", port =8080)
+

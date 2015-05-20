@@ -1,9 +1,10 @@
 # -*- coding: cp1252 -*-
-from bottle import route, run, template, request, static_file
-import re, sys, mysql.connector
-import getpass
-import smtplib
-"""from validate_email import validate_email"""
+ 
+from bottle import *
+from os import listdir
+
+username = ""
+email = ""
 
 """Puts in CSS-files and pics"""
 @route('/static/<filename>')
@@ -12,9 +13,9 @@ def serve_static(filename):
 
 
 """Handels database connection """
-def handelsUsers():
+"""def handelsUsers():
     con=mysql.connector.connect(username=username, mejl=mejl, password1=password1, host="localhost", database="sagoland")
-    cursor=con.cursor()
+    cursor=con.cursor()"""
 
 
     
