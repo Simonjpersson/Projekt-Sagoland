@@ -1,6 +1,6 @@
 # -*- coding: cp1252 -*-
 from bottle import Bottle, get, post, request, run, static_file, template, route, response, TEMPLATE_PATH
-from validate_email import validate_email
+"""from validate_email import validate_email"""
 import smtplib, re, sys, mysql.connector
 
 
