@@ -199,6 +199,21 @@ footer{
 width:100%;
 }
 
+/*Text*/
+h1,h2,h3,h4,p{
+text-align:center;
+}
+
+
+form {
+display: inline-block;
+text-align: center;
+width:40%;
+margin-left: 30%; 
+margin-top:2%;
+margin-bottom: 2%;
+}
+
 
 /* Responsiv */	
 @media (max-width: 600px){
