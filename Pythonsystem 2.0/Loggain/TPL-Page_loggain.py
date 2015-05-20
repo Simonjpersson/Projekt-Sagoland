@@ -2,7 +2,8 @@
 from bottle import Bottle, get, post, request, run, static_file, template, route, response, TEMPLATE_PATH
 from validate_email import validate_email
 import smtplib, re, sys, mysql.connector
-app = Bottle()
+
+
 @route('/static/<filename>')
 def serve_static(filename):
     """Lägger CSS-filen + bilderna """
@@ -18,7 +19,7 @@ def handelsUsers():
 
 
     
-@route('/')
+@post('/loggain')
 def registerUser():
     global username, mejl, password1, password2
     username = request.forms.username
