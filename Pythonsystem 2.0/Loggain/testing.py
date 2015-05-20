@@ -19,4 +19,9 @@ def homepage():
 
     return template("index")
 
+@route("")
+def contactus():
+
+    return template("")
+
 run(reloader=True, debug=True, host="localhost", port =8080)
