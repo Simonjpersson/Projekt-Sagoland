@@ -49,8 +49,7 @@
 				</section>
 
 				<section id="contentright">
-					<p>{{name1}}</p>
-					<p>{{name2}}</p>
+					
 					<p>{{text}}</p>
 				</section>	
 				

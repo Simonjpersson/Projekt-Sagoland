@@ -37,6 +37,7 @@ def story_fmdmk_1():
     name1 = request.forms.name1
     name2 = request.forms.name2
 
+   
     textfile = open("text/Sida1.txt", "r")
        
     searchname1 = textfile.read()
@@ -45,7 +46,7 @@ def story_fmdmk_1():
     
     textfile.close()
     
-    return template("FMDMK-1", name1=name1, name2=name2)
+    return template("FMDMK-1", text=text)
 
     
 
