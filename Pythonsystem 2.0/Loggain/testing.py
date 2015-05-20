@@ -1,5 +1,6 @@
 from bottle import route, run, template, request, static_file
 #import mysql.connector
+# Author: Marielle 
 """from validate_email import validate_email"""
 
 """Puts in CSS-files and pics"""
@@ -23,7 +24,11 @@ def homepage():
 @route("/contact1/")
 def contactus():
 
+<<<<<<< HEAD
     return template("contact1.tpl")
+=======
+    return template("contact1")
+>>>>>>> origin/master
 
 run(reloader=True, debug=True, host="localhost", port =8080)
 
