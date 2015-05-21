@@ -41,9 +41,9 @@
 				<section id="contentleft">
 					<h2>Vill du byta namn på huvudkaraktärerna?</h2>
 					<p><b>Ja!</b></p>
-					<p>Fyll i nya namn och klicka på Okej-knappen. Sagan kommer nu starta med dina egna påhittade namn på huvudkaraktärerna! </p>
+					<p>Fyll i nya namn och klicka på 'Starta äventyret' med dina egna påhittade namn på huvudkaraktärerna! </p>
 					<p><b>Nej!</b></p>
-					<p>Klicka dig vidare på sidan så startar sagan med deras riktiga namn.</p>	
+					<p>Klicka direkt på 'Starta äventyret'.</p>	
 					
 				</section>
 
@@ -52,11 +52,17 @@
 						<img src="FMDMK/emma-name.png" alt="Flickan Emma" class="storyimages">
 						<img src="FMDMK/Kattis-name.png" alt="Katten Kattis" class="storyimages">
 					</p>
-					<form>
-						<input type="text" name="name1" value= "">
-						<input type="text" name="name2" value= "">
-						<img src="FMDMK/Okej-knapp.png" alt="Okej" class="storyimages" id="okej-knapp">
+
+
+					<form action = "FMDMK-1.html" method = "POST">
+						<p><label for "name1">Namn på flickan:</label></p>
+						<input type="text" name="name1">
+						<p><label for "name1">Namn på katten:</label></p>
+						<input type="text" name="name2">
+						<input type="submit" value= "Starta äventyret!">
+
 					</form>
+					
 				</section>	
 				
 
