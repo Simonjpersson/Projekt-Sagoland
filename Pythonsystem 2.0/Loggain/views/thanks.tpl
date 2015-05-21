@@ -29,15 +29,14 @@
 			</div>
 				<section>
 	
-				 
+				<p> 
 	
 
-				<h1>Tack för att du har skickat ett meddelande till oss!</p>
-				<h3> Vi ska försöka svara så fort som möjligt.</h3>
+				<b>TACK FÖR ATT DU HAR SKICKAT ETT MEDELANDE TILL OSS, VI SKA FÖRSÖKA SVARA SÅ SNABBT SOM MÖJLIGT!</b>
 			<div>
-				<img class="30px" src="write/picturewrite/bildpicturebox/girl.png" alt="Bild på Anja">
+				<img class="30px" src="picturewrite/bildpicturebox/girl.png" alt="Bild på Anja">
 
-				<img class="30px" src="write/picturewrite/bildpicturebox/cat.png" alt="Bild på en katt">
+				<img class="30px" src="picturewrite/bildpicturebox/cat.png" alt="Bild på en katt">
 
 			</div>
 				</section>

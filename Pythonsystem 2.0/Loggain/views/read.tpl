@@ -37,7 +37,7 @@
 				<p class="center">Här kommer du kunna välja bland mängder med sagor </p>
 				
 					<ul>
-						<li><a href="Lasa/FMDMK-front.html#content">Flickan med de magiska kritorna</a></li>
+						<li><a href="Lasa/FMDMK-front.html#content">Emma och de magiska kritorna</a></li>
 						<li><a href="Lasa/PPA/PPA0.html#content">Prinsessan på ärten</a></li>
 						<li><a href="Lasa/PPA/PPA0.html#content">Den fula ankungen</a></li>
 						<li><a href="Lasa/PPA/PPA0.html#content">Den stora hatten</a></li>

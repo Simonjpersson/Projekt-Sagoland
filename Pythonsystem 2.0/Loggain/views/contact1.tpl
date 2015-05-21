@@ -27,30 +27,30 @@
 				</ul>
 			
 			</div>
-				<section id="cent">
+				<section>
 	
 				
-				
-				<h1>FRÅGOR OCH SVAR</h1>
+				<p>
+				<b>FRÅGOR OCH SVAR</b>
 
-				<h3>SKRIVA:</h3>
-				<p>-	Hur skriver man sagor? </p>
-				<p><i>För att skriva en saga måste man skapa ett konto, 
-				det gör du genom att trycka på logga in och följa beskrivningarna.  </i></p>
+				<div><u>SKRIVA:</u> </div>
+				-	Hur skriver man sagor? 
+				<i>För att skriva en saga måste man skapa ett konto, 
+				det gör du genom att trycka på logga in och följa beskrivningarna.  </i>
 
-				<p> -	Kan man ta bort sagor? </p>
-				<p><i>Du kan ta bort och redigera sagor du själv skrivit. </i></p>
+				<div> -	Kan man ta bort sagor? 
+				<i>Du kan ta bort och redigera sagor du själv skrivit. </i></div>
 
-				<h3>LÄSA:</h3> 
-				<p>-	Kan jag läsa sagor utan att vara inloggad? </p>
-				<p><i>Det kan du absolut göra, 
-				 du behöver endast vara inloggad när du ska skriva, redigera eller ta bort sagor. </i></p>
+				<div><u>LÄSA:</u></div> 
+				-	Kan jag läsa sagor utan att vara inloggad? 
+				<i>Det kan du absolut göra, 
+				 du behöver endast vara inloggad när du ska skriva, redigera eller ta bort sagor. </i>
 
-				
+				 <div>
 			
 				
-					<form action="thanks.html" method="get">
-					<fieldset>
+				<form action="thanks.html" method="get" class="center">
+					<fieldset style="width: 400px;">
 					<legend>SKICKA ETT MEDDELANDE</legend>
 					<label for="epost">E-postadress:</label> <br />
 					<input type="text" name="epost" id="epost" /> <br/>
@@ -58,10 +58,10 @@
 					<textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br />
 					<label for="skicka"></label>
 					<input type="submit" name="skicka" id="skicka" value="Skicka meddelandet" />
+			
 					</fieldset>
-					</form>
-
-				
+		
+				</form>
 
 				</div>
 				

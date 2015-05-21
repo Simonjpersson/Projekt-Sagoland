@@ -84,10 +84,10 @@ body{
 }
 
 /*Namnet på sagan som är ett input element*/
-#Titel{
+#Title{
   text-align: center;
   margin-top: 3%;
-  margin-left: 8%;
+  margin-left: 6%;
   margin-bottom: 1%;
   width: 70%;
   font-family: myFont;
@@ -131,6 +131,10 @@ textarea{
     background-color: transparent;   
 }
 
+#arrowright{
+  background-image: url(picturewrite/arrowright.png);
+  
+}
 /*elementet som har alla bilder*/
 #picturebox{
     display: none;

@@ -24,7 +24,7 @@
 				<ul> 	
 					
 						<li><a href="../contact1.html">Kontakta Oss</a></li>
-						<li class='active'><a href="../loggin.html">Skriv Saga</a></li>
+						<li class='active'><a href="write.html">Skriv Saga</a></li>
 						<li><a href="../read.html">Läs Saga</a></li>
 						<li ><a href="../index.html">Startsida</a></li>
 					
@@ -82,12 +82,13 @@
 												</li>	
 
 									<!--Spara sagan och kunna ladda den genom javascript/blob/-->
-
-						</ul>		
+							<li class="list_button" onclick="saveTextAsFile()">
+							<p>Spara din Saga</p>
+							</li>						
 					</div>
 
-				<!--Hela bokens innehåll!-->
-						<input type="text" maxlength="55" id="Titel" value="Vad heter din saga?">
+						<!--namnger din saga !-->
+						<input id="Title" type="text" maxlength="55" value="Vad heter din saga?">
 		
 						<!--Hela bokens element!-->
 
@@ -103,6 +104,7 @@
 						</div>
 
 							<!-- Elementet som innehåller alla bilder och gör det möjligt att dra ifrån -->
+							 <div id="arrowright"><a href="read.html"></a></div>
 							
 							<div id="picturebox">
 								
