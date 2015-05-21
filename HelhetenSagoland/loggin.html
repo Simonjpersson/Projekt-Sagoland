@@ -23,24 +23,74 @@
 						<li class='active'><a href="loggin.html">Skriv Saga</a></li>
 						<li><a href="read.html">Läs Saga</a></li>
 						<li ><a href="index.html">Startsida</a></li>
+
 					
 				</ul>
-			</div>
-		
 			
-				<section>
-					<img src="pictureloggin/rubrik2.png" alt="Skriva saga" class="center">
-					<img src="pictureloggin/fakelogin.png" alt="Fake login" class="center">
+			</div>
+				
+				<section id="content">
+
+				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
+				<section id="contentleft">
+					<h2>Hej!</h2>
+					<p>
+						För att kunna skriva en saga och publicera den måste du vara inloggad på Sagoland. Vill du endast testa att skriva en saga utan att publicera den så klicka <a href="xxxlänk till skriva-sidanxxx">här</a>.
+					</p>
+
+					<form action="write/write.html" method="get" class="center">
 					
+					<label for="username">Användarnamn:</label> 
+					<input type="text" name="användarnamn" id="användarnamn1" /> 
+					<p> </p>
+					<label for="password">Lösenord:</label> 
+					<input type="text" name="lösenord" id="lösenord1" /> 
+					<p><label for="skicka"></label></p>
+					<input type="submit" name="skicka" id="skicka" value="Logga in" />
 					
-						<p class="center"> Du behöver vara inloggad för att kunna skriva en saga </p>
-						<p class="center"> Detta funkar ännu inte. På återseende </p>	
-						<h2> <a href ="write/write.html">Testa att Skriv saga här</a></h2>
+				</form>
+
 					
 				</section>
+
+				<section id="contentright">
+					
+					<h3>Skapa en inloggning</h3>
+					<form action="write/write.html" method="get" class="center">
+						<p>
+							<label for "username">Användarnamn:</label>
+							<input type = "text" name = "username">
+						</p>
+						<p>
+							<label for "mejl">E-postadress:</label>
+							<input type = "text" name = "mejl">
+						</p>
+						<p>
+							<label for "password1">Lösenord:</label>
+							<input type = "text" name = "password1">
+						</p>
+						<p>
+							<label for "password2">Bekräfta lösenord:</label>
+							<input type = "text" name = "password2">
+						</p>
+
+						<p>
+							<label for "password2">Ja, jag har läst och accepterar Sagolands användarvillkor.</label>
+							<input type="checkbox" name="choice"> 
+						</p>
+						<p><input type="submit" name="skicka" id="skicka" value="Skapa användare" /></p>
+
+
+				</section>	
+				
+
+			</section>
+
+				
 			<footer>
 				<p>Copyright 2015</p>
 			</footer>
 		</div>
 	</body>
+
 </html>
