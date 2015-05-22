@@ -32,20 +32,21 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-6.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-11.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-6.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-13.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida7.png" alt="Flickan och katten är plötsligt på en strand." class="storyimages"></p>	
+					<p><img src="FMDMK/sida12.png" alt="Flickan ritar hela familjen." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<p>Emma ritar upp en strand med en böljande hav och väntar sedan nyfiket. Hon behöver inte vänta länge förens hon hör det bekanta ljudet igen:</p>
-					<p><b>POFF!!!</b></p>
-					<p>Helt plötsligt står Emma på en strand iförd strandkläder och se där! Katten Kattis har visst redan börjat att simma. Vilken härlig dag!</p>
+					<p>Men när hon ser vad sin dotter ritar blir hon tyst.
+					<p>– Ta min hand mamma, säger Emma. Du måste bara tro. </p>
+					<p>När mor och dotter fattar varandras händer sker något helt fantastiskt.</p>
+					<p><b>POFF!!!</b> 
 				</section>	
 				
 
@@ -54,7 +55,6 @@
 
 
 			<footer>
-				<p> Hemsidan är skapad som ett projekt i kursen Systemutveckling på Malmö Högskola</p>
 				<p>Coypright 2015</p>
 				
 			</footer>

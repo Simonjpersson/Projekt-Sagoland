@@ -9,7 +9,7 @@
 	
 <body>
 	<div id="wrapper">
-		<header>
+				<header>
 			<img class= "full" src="commondesign/banner4.jpg" alt="Logga Sagoland">
 		</header>
 		
@@ -27,24 +27,34 @@
 			</div>
 		
 
+
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-1.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-5.tpl#content"><section class="left"><p></p></section></a>
+				
+				<a href="FMDMK-7.tpl#content"><section class="right"><p></p></section></a>
 								
-				<a href="FMDMK-3.html#content"><section class="right"><p></p></section></a>
+				<section class="right"><p></p></section>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida2.png" alt="Flickan sitter och ritar, Katten sover, Pappa står med portfölj." class="storyimages"></p>		
+					<p><h2>Vad vill du att Emma ska rita?</h2>
+					<p>Klicka på bilderna och välj vad Emma ska rita. Vad kommer att hända nu i sagan?</p>
+					
 				</section>
 
 				<section id="contentright">
-					<p>Emma bor tillsammans med sin mamma och pappa i ett fint hus där det alltid är sommar.</p> 
-					<p>Emmas mamma jobbar på café och brukar ge Emma en kaka då och då.</p> 
-					<p>Vad Emmas pappa jobbar med vet Emma inte riktigt. Han brukar mest gå runt i fina byxor och en portfölj. Han är inte ofta hemma, men när han kommer tillbaka har han alltid med en fin present åt Emma.</p>
+					<p>
+						<a href="FMDMK-7.tpl#content"><img src="FMDMK/sida6-strand.png" alt="Flickan ritar en strand" class="storyimages"></a>
+						<a href="FMDMK-8.tpl#content"><img src="FMDMK/sida6-hund.png" alt="Flickan ritar en hund" class="storyimages"></a>
+					</p>
+					<p>
+						<a href="FMDMK-9.tpl#content"><img src="FMDMK/sida6-paris.png" alt="Flickan ritar Eiffeltornet" class="storyimages"></a>
+						<a href="FMDMK-10.tpl#content"><img src="FMDMK/sida6-gunga.png" alt="Flickan en gunga" class="storyimages"></a>
+					</p>
 				</section>	
 				
 

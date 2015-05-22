@@ -27,25 +27,36 @@
 			</div>
 		
 
+
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-3.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-front.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-5.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-1.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida4.png" alt="Flickan börjar rita på väggen med sina magiska kritor." class="storyimages"></p>	
+					<h2>Vill du byta namn på huvudkaraktärerna?</h2>
+					<p><b>Ja!</b></p>
+					<p>Fyll i nya namn och klicka på Okej-knappen. Sagan kommer nu starta med dina egna påhittade namn på huvudkaraktärerna! </p>
+					<p><b>Nej!</b></p>
+					<p>Klicka dig vidare på sidan så startar sagan med deras riktiga namn.</p>	
+					
 				</section>
 
 				<section id="contentright">
-					<p>När pappa har åkt tar Emma upp sina nya kritor och inspekterar dem nyfiket. Vaddå magiska? Och när är det tråkigt nog så att det är nödvändigt att använda dem?</p> 
-					<p>Emma funderar en stund och kommer fram till att hon har rätt tråkigt just nu, lika bra att använda dem.</p> 
-					<p>Katten Kattis som precis slagit sig till ro på kudden igen himlar med ögonen och fortsätter sin lur.</p>
-					<p>Som den lilla flicka Emma är så älskar hon prinsessor och börjar då rita en prinsessa direkt på väggen. Är det magiska kritor försvinner det säkert av sig själv från tapeten tänker hon.</p>
+					<p>
+						<img src="FMDMK/emma-name.png" alt="Flickan Emma" class="storyimages">
+						<img src="FMDMK/Kattis-name.png" alt="Katten Kattis" class="storyimages">
+					</p>
+					<form>
+						<input type="text" name="name1" value= "">
+						<input type="text" name="name2" value= "">
+						<img src="FMDMK/Okej-knapp.png" alt="Okej" class="storyimages" id="okej-knapp">
+					</form>
 				</section>	
 				
 

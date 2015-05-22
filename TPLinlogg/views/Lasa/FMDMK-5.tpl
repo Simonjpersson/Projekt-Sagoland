@@ -9,7 +9,7 @@
 	
 <body>
 	<div id="wrapper">
-				<header>
+		<header>
 			<img class= "full" src="commondesign/banner4.jpg" alt="Logga Sagoland">
 		</header>
 		
@@ -32,27 +32,22 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-5.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-4.tpl#content"><section class="left"><p></p></section></a>
 								
-				<section class="right"><p></p></section>
+				<a href="FMDMK-6.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><h2>Vad vill du att Emma ska rita?</h2>
-					<p>Klicka på bilderna och välj vad Emma ska rita. Vad kommer att hända nu i sagan?</p>
-					
+					<p><img src="FMDMK/sida5.png" alt="Flickan och katten förvandlas till prinsessor." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<p>
-						<a href="FMDMK-7.html#content"><img src="FMDMK/sida6-strand.png" alt="Flickan ritar en strand" class="storyimages"></a>
-						<a href="FMDMK-8.html#content"><img src="FMDMK/sida6-hund.png" alt="Flickan ritar en hund" class="storyimages"></a>
-					</p>
-					<p>
-						<a href="FMDMK-9.html#content"><img src="FMDMK/sida6-paris.png" alt="Flickan ritar Eiffeltornet" class="storyimages"></a>
-						<a href="FMDMK-10.html#content"><img src="FMDMK/sida6-gunga.png" alt="Flickan en gunga" class="storyimages"></a>
-					</p>
+					<p>Emma ritar en jättefin prinsessa och när hon nästan är klar så säger det bara:</p> 
+					<p><b>POFF!!!</b></p> 
+					<p>När Emma kollar ner på sina kläder så har hon en jättefin prinsessklänning på sig. När hon känner ovanpå sitt huvud har hon en alldeles blänkande häftigt prinsesskrona.</p>
+					<p>Katten Kattis skriker till när han upptäcker att även han har förvandlats till en prinsessa.</p>
+					<p>– Åh vad häftigt! utbrister Emma glatt. Jag måste rita mer saker!!</p>
 				</section>	
 				
 

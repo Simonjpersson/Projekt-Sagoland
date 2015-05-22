@@ -32,22 +32,20 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-4.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-6.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-6.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-6.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida5.png" alt="Flickan och katten förvandlas till prinsessor." class="storyimages"></p>	
+					<p><img src="FMDMK/sida7.png" alt="Flickan och katten är plötsligt på en strand." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<p>Emma ritar en jättefin prinsessa och när hon nästan är klar så säger det bara:</p> 
-					<p><b>POFF!!!</b></p> 
-					<p>När Emma kollar ner på sina kläder så har hon en jättefin prinsessklänning på sig. När hon känner ovanpå sitt huvud har hon en alldeles blänkande häftigt prinsesskrona.</p>
-					<p>Katten Kattis skriker till när han upptäcker att även han har förvandlats till en prinsessa.</p>
-					<p>– Åh vad häftigt! utbrister Emma glatt. Jag måste rita mer saker!!</p>
+					<p>Emma ritar upp en strand med en böljande hav och väntar sedan nyfiket. Hon behöver inte vänta länge förens hon hör det bekanta ljudet igen:</p>
+					<p><b>POFF!!!</b></p>
+					<p>Helt plötsligt står Emma på en strand iförd strandkläder och se där! Katten Kattis har visst redan börjat att simma. Vilken härlig dag!</p>
 				</section>	
 				
 
