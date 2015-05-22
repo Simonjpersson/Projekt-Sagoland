@@ -2,18 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		
+
 		<title>Sagoland</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script src="javascript.js" type="text/javascript"></script>
 	</head>
 	
-<body>
-	<div id="wrapper">
+	<body>
+		<div id="wrapper">
+		
 		<header>
 			<img class= "full" src="commondesign/banner4.jpg" alt="Logga Sagoland">
 		</header>
-		
-<!--Navigations Meny-->			
+			
 			<div id='cssmenu'>
 				<ul> 	
 					
@@ -28,25 +30,26 @@
 		
 
 
+
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-6.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-names.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-6.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-2.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida8.png" alt="Flickan sitter och ritar, Katten sover." class="storyimages"></p>	
+					<img class="storyimages" src="FMDMK/sida1.png" alt="Flickan sitter och ritar, Katten sover">
 				</section>
 
 				<section id="contentright">
-					<p>En hund har Emma alltid velat ha, så hon skyndar sig att rita den finaste hund som hon vet.</p>
-					<p><b>POFF!!!</b></p>
-					<p>– Åhhh Kattis!!! Kolla en hund!! utbrister Emma glatt.</p>
-					<p>Katten Kattis ryggar tillbaka och skriker till av fasa.</p>
+					<p>Det här är Emma. Emma är 5 år och gillar att rita.</p> 
+					<p>Emmas katt heter Kattis. Katten Kattis gillar också att rita.</p> 
+					<p>I alla fall om man får tro Emma.</p>
+					<p>Katten Kattis himlar med ögonen och fortsätter sin eftermiddagslur.</p>
 				</section>	
 				
 

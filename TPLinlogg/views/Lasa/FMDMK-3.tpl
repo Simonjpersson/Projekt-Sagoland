@@ -27,24 +27,26 @@
 			</div>
 		
 
-
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-6.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-2.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-11.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-4.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida10.png" alt="Flickan ritar en gunga i ett träd." class="storyimages"></p>	
+					<p><img src="FMDMK/sida3.png" alt="Flickan fått kritor och hoppar upp och ner." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<p>Det hade varit kul att gunga, tänker Emma, upplyft över vad hennes magiska kritor hittills har givit henne. Hon ritar ett träd med en blå gunga och väntar på det nu välbekanta ljudet. Istället säger en röst argt:</p>
-					<p><b>VAD HÅLLER DU PÅ MED?!!?!</b></p>
+					<p>– Emma, jag kommer att åka iväg på en ny affärsresa nu, säger pappa försiktigt. Men jag har en liten present till dig så att du har något kul att göra när jag är borta.</p>
+					<p>– Kritor!! ropar Emma förtjust och börjar hoppa upp och ner av glädje.</p> 
+					<p>– Ja, men det är inga vanliga kritor det där, fortsätter pappa. Det är magiska kritor.</p>
+					<p>– Magiska kritor? svara Emma förvånat och ser storögt upp på sin pappa.</p>
+					<p>– Ja, när du har riktigt tråkigt så kan du rita vad du som helst och det kommer att bli sant, säger pappa och blinkar finurligt med ena ögat. Men använd dem bara när det är absolut nödvändigt!</p>
 				</section>	
 				
 

@@ -27,27 +27,36 @@
 			</div>
 		
 
+
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<section class="left"><p></p></section>
+				<a href="FMDMK-6.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-names.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-11.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-						
+					<p><img src="FMDMK/sida10.png" alt="Flickan ritar en gunga i ett träd." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<img src="FMDMK/Frontpage.png" alt="Flickan med de magiska kritorna" class="storyimages">
+					<p>Det hade varit kul att gunga, tänker Emma, upplyft över vad hennes magiska kritor hittills har givit henne. Hon ritar ett träd med en blå gunga och väntar på det nu välbekanta ljudet. Istället säger en röst argt:</p>
+					<p><b>VAD HÅLLER DU PÅ MED?!!?!</b></p>
 				</section>	
 				
 
 			</section>
 
+
+
+			<footer>
+				<p> Hemsidan är skapad som ett projekt i kursen Systemutveckling på Malmö Högskola</p>
+				<p>Coypright 2015</p>
+				
+			</footer>
 		</div>
 	</body>
 </html>

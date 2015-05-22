@@ -32,20 +32,21 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-6.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-6.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-6.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-6.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida9.png" alt="Flickan hamnar i Paris." class="storyimages"></p>	
+					<p><img src="FMDMK/sida8.png" alt="Flickan sitter och ritar, Katten sover." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<p>Hmm tänker Emma. Undrar om man även kan byta land? Pappa har alltid berättat om hur vackert Frankrike är. Ja, jag vet! Jag ritar Eiffeltornet i Paris!</p>
+					<p>En hund har Emma alltid velat ha, så hon skyndar sig att rita den finaste hund som hon vet.</p>
 					<p><b>POFF!!!</b></p>
-					<p>– Hahaha Kattis, du har en basker, utbrister Emma glatt och pekar på Katten Kattis huvudbonad. Och jag är en konstnär! Åh vad fint jag kommer kunna rita nu!</p>
+					<p>– Åhhh Kattis!!! Kolla en hund!! utbrister Emma glatt.</p>
+					<p>Katten Kattis ryggar tillbaka och skriker till av fasa.</p>
 				</section>	
 				
 

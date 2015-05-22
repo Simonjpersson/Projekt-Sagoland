@@ -2,20 +2,18 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		
-
 		<title>Sagoland</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script src="javascript.js" type="text/javascript"></script>
 	</head>
 	
-	<body>
-		<div id="wrapper">
-		
+<body>
+	<div id="wrapper">
 		<header>
 			<img class= "full" src="commondesign/banner4.jpg" alt="Logga Sagoland">
 		</header>
-			
+		
+<!--Navigations Meny-->			
 			<div id='cssmenu'>
 				<ul> 	
 					
@@ -30,26 +28,28 @@
 		
 
 
-
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-names.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-10.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-2.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-12.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<img class="storyimages" src="FMDMK/sida1.png" alt="Flickan sitter och ritar, Katten sover">
+					<p><img src="FMDMK/sida11.png" alt="Flickan är chockad för att mamma ser att hon ritat på tapeten." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<p>Det här är Emma. Emma är 5 år och gillar att rita.</p> 
-					<p>Emmas katt heter Kattis. Katten Kattis gillar också att rita.</p> 
-					<p>I alla fall om man får tro Emma.</p>
-					<p>Katten Kattis himlar med ögonen och fortsätter sin eftermiddagslur.</p>
+
+					<p>Emma förklarar att det inte är någon fara och börjar sedan rita igen på väggen.</p>
+					<p>Emmas mamma står argt med händerna i sidorna och fortsätter:</p>
+					<p>– Varför ritar du på tapeterna?!</p>
+					<p>Emma slutar genast att rita och börjar förklara:</p>
+					<p>– Men mamma, det är ingen fara. Det är magiska kritor. De kan ge oss allt vi någonsin önskat oss!</p>
+					<p>Emmas mamma ser frågande ut men när hon ser att Emma börjar att rita ännu en gång på tapeterna är hon reda att börja skrika igen.</p>
 				</section>	
 				
 
