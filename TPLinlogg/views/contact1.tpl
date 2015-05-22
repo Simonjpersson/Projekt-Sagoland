@@ -49,7 +49,7 @@
 				 <div>
 			
 				
-				<form action="thanks.html" method="get" class="center">
+				<form action="thanks.tpl" method="get" class="center">
 					<fieldset style="width: 400px;">
 					<legend>SKICKA ETT MEDDELANDE</legend>
 					<label for="epost">E-postadress:</label> <br />
