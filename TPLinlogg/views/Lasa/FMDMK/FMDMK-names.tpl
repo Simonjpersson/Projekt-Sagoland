@@ -23,10 +23,10 @@
 				
 			<nav> 	
 			
-					<a href="index.html"class="chosen">Startsida</a>
-					<a href="lasa.html">Läsa</a>
-					<a href="skriva.html"> Skriva</a>
-					<a href="contact.html">Kontakta Oss</a>
+					<a href="index.tpl"class="chosen">Startsida</a>
+					<a href="lasa.tpl">Läsa</a>
+					<a href="skriva.tpl"> Skriva</a>
+					<a href="contact.tpl">Kontakta Oss</a>
 				
 			</nav>
 
@@ -36,22 +36,20 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-names.html"><section class="left"><p></p></section></a>
+				<a href="FMDMK-front.tpl"><section class="left"><p></p></section></a>
 								
-				<a href="lasa2.html"><section class="right"><p></p></section></a>
+				<a href="FMDMK-1.tpl"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p>Sida 1</p>	
+					<p>Vill du byta namn på huvudkaraktärerna?</p>	
+					
 				</section>
 
 				<section id="contentright">
-					<p>Det var en gång en liten flicka som heter Emma.</p>
-					<p>Emma är 5 år och gillar att rita.</p> 
-					<p>Emmas katt heter Kattis.</p> 
-					<p>Kattis gillar också att rita.</p> 
-					<p>I alla fall om man får tro Emma.</p>
+					<img src="FMDMK/emma-name.png" alt="Flickan Emma">
+					<img src="FMDMK/Kattis-name.png" alt="Katten Kattis">
 				</section>	
 				
 
