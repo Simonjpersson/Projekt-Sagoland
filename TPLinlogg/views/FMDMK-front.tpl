@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>Sagoland</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<script src="javascript.js" type="text/javascript"></script>
+	<title>Sagoland</title>
+		<link href="/static/style.css" rel="stylesheet" type="text/css">
+		<script src="/static/javascript.js" type="text/javascript"></script>
 	</head>
 	
-<body>
-	<div id="wrapper">
-		<header>
-			<img class= "full" src="commondesign/banner4.jpg" alt="Logga Sagoland">
-		</header>
+	<body>
+		<div id="wrapper">
 		
-<!--Navigations Meny-->			
+			<header>
+				<img src="/static/banner4.jpg" alt="Logga Sagoland" width="100%">
+			</header>
+			
 			<div id='cssmenu'>
 				<ul> 	
-					
-						<li><a href="../contact1.tpl">Kontakta Oss</a></li>
-						<li><a href="../loggain.tpl">Skriv Saga</a></li>
-						<li class='active'><a href="../read.tpl">Läs Saga</a></li>
-						<li ><a href="../index.tpl">Startsida</a></li>
+					<li><a href="/contact1/">Kontakta Oss</a></li>
+					<li><a href="/">Skriv Saga</a></li>
+					<li class='active'><a href="/read/">Läs Saga</a></li>
+					<li><a href="/sagoland/">Startsida</a></li>	
 					
 				</ul>
 			
 			</div>
-		
+
 
 			<section id="content">
 
