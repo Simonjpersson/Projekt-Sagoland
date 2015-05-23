@@ -62,11 +62,6 @@ def write4():
 @route("/contact1/")
 def contactus():
     return template("contact1")
-	
-	
-@route("/contact1/")
-def contactus():
-    return template("contact1")
 
 
 
