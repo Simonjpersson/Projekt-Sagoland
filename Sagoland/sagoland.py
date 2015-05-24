@@ -1,22 +1,22 @@
 # -*- coding: utf8 -*-x
 #authors: Mimmi Castmo, Marielle Moreira Lucana, Emma Persson Wik, Simon Persson och Pernilla Stagnebo
 """from bottle import *"""
-from bottle import route, run, template, request, static_file, default_app
+from bottle import *
 import re, sys, mysql.connector
 import getpass
 import smtplib
-from validate_email import validate_email
-
+#from validate_email import validate_email
+"""I filen Sagoland sker all anknytning mellan sidor och koder"""
 
 class functions():
     
-        """Puts in CSS-files and pics"""
+        """Sätter in CSS-filerna och bilder"""
         @route('/static/<filename>')
         def serve_static(filename):
                 return static_file(filename, root ="static")
 
 
-        """Handels database connection """
+        """Hanterar databas anslutningen """
         def handelsUsers():
                 con=mysql.connector.connect(username=username, mejl=mejl, password1=password1, host="localhost", database="sagoland")
                 cursor=con.cursor()
@@ -65,7 +65,7 @@ Koden ansluter sig till en databas som lägger in användare och som kan ändra 
 användares information
 """
 
-"""Registers users """
+"""Registrerar användaren """
 @route("/loggain")
 def regUsers():
         global username, mejl
@@ -91,7 +91,7 @@ def regUsers():
             "invalid credentials"
 
 
-"""User logs in and is then directed to the write-page """
+"""Användaren loggar in """
 @route("/loggain")
 def signIn():
         global username
@@ -107,13 +107,13 @@ def signIn():
             "invalid credentials"'''
 
 
-"""When user logs in they're directed towards the writing page """
+"""När användaren loggar in kommer användaren in till write-sidan """
 @route("/write", method="POST")
 def write():
         return template("Write/write")
 
 
-""" you will be aple to edit a user information here"""
+"""Här kan man redigera en användares information"""
 @route("/edituser/", method ="POST")
 def editUser():
         global username,mejl, password1, password2
@@ -165,7 +165,7 @@ def write():
 
 
 
-"""READ"""
+"""Läsa"""
 @route('/read')
 def read():
         """Kör Läsa-sidan som visar alla sagor"""
