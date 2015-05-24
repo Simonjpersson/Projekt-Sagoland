@@ -8,7 +8,7 @@ from validate_email import validate_email
 
 """I den här koden ska man kunna logga in, registrera och ändra användarinformation""""
 """ Koden ansluter sig till en databas som lägger in användare och som kan ändra en användares information """
-
+""" Koden använder sig pip och validate_email som måste installeras innan koden kan köras"""
 
 class functions():
     
