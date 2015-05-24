@@ -6,13 +6,13 @@ import smtplib
 from validate_email import validate_email
 
 
-"""I den här koden ska man kunna logga in, registrera och ändra användarinformation""""
+"""I den här koden ska man kunna logga in, registrera och ändra användarinformation"""
 """ Koden ansluter sig till en databas som lägger in användare och som kan ändra en användares information """
 """ Koden använder sig pip och validate_email som måste installeras innan koden kan köras"""
 
 class functions():
     
-"""Puts in CSS-files and pics"""
+
     @route('/static/<filename>')
     def serve_static(filename):
         return static_file(filename, root ="static")
@@ -44,7 +44,7 @@ class functions():
         password2=request.forms.password2
 
         if password1==password2:
-            if validate_email(mejl, verify=True):
+            if is_valis= validate_email(mejl, check_mx=True):
             #här finns en mysql
                 query('INSERT user(username, mejl, password1)' ' VALUES(%s,%s,%s)', (username, mejl, password1))
                 return template("loggain", title=username, username=username, mejl=mejl, password1=password1,password2=password2)
