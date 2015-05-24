@@ -56,7 +56,7 @@
 					</p>
 					<form action="FMDMK-front" method="POST">
 						<p><label for "name">Namn på flickan:</label></p>
-						<input type="text" name="name">
+						<input type="text" name="name" value="Emma">
 						
 						<input type="submit" value= "Starta äventyret!"></a>
 					</form>

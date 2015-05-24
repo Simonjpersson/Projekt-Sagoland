@@ -23,8 +23,8 @@
 			<div id='cssmenu'>
 				<ul> 	
 					<li><a href="/contact">Kontakta Oss</a></li>
-					<li><a href="/loggain">Skriv Saga</a></li>
-					<li class='active'><a href="/read">Läs Saga</a></li>
+					<li class='active'><a href="/loggain">Skriv Saga</a></li>
+					<li><a href="/read">Läs Saga</a></li>
 					<li><a href="/">Startsida</a></li>	
 					
 				</ul>
