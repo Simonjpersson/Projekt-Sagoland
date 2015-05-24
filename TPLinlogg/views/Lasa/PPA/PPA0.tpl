@@ -20,10 +20,10 @@
 			<div id='cssmenu'>
 				<ul> 	
 					
-						<li><a href="../../contact1.html">Kontakta Oss</a></li>
-						<li><a href="../../loggain.html">Skriv Saga</a></li>
-						<li class='active'><a href="../../read.html">Läs Saga</a></li>
-						<li><a href="../../index.html">Startsida</a></li>
+						<li><a href="../../contact1.tpl">Kontakta Oss</a></li>
+						<li><a href="../../loggain.tpl">Skriv Saga</a></li>
+						<li class='active'><a href="../../read.tpl">Läs Saga</a></li>
+						<li><a href="../../index.tpl">Startsida</a></li>
 					
 				</ul>
 			</div>
@@ -37,7 +37,7 @@
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
 				<section class="left"><p></p></section>
 								
-				<a href="PPA-1.html#content"><section class="right"><p></p></section></a>
+				<a href="PPA-1.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->

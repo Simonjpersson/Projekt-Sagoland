@@ -23,10 +23,10 @@
 				
 			<nav> 	
 			
-					<a href="index.html"class="chosen">Startsida</a>
-					<a href="lasa.html">Läsa</a>
-					<a href="skriva.html"> Skriva</a>
-					<a href="contact.html">Kontakta Oss</a>
+					<a href="index.tpl"class="chosen">Startsida</a>
+					<a href="lasa.tpl">Läsa</a>
+					<a href="skriva.tpl"> Skriva</a>
+					<a href="contact.tpl">Kontakta Oss</a>
 				
 			</nav>
 
@@ -38,7 +38,7 @@
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
 				<section class="left"><p></p></section>
 								
-				<a href="lasa2.html"><section class="right"><p></p></section></a>
+				<a href="lasa2.tpl"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->

@@ -27,25 +27,25 @@
 			</div>
 		
 
-
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-6.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-3.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-6.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-5.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida7.png" alt="Flickan och katten är plötsligt på en strand." class="storyimages"></p>	
+					<p><img src="FMDMK/sida4.png" alt="Flickan börjar rita på väggen med sina magiska kritor." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<p>Emma ritar upp en strand med en böljande hav och väntar sedan nyfiket. Hon behöver inte vänta länge förens hon hör det bekanta ljudet igen:</p>
-					<p><b>POFF!!!</b></p>
-					<p>Helt plötsligt står Emma på en strand iförd strandkläder och se där! Katten Kattis har visst redan börjat att simma. Vilken härlig dag!</p>
+					<p>När pappa har åkt tar Emma upp sina nya kritor och inspekterar dem nyfiket. Vaddå magiska? Och när är det tråkigt nog så att det är nödvändigt att använda dem?</p> 
+					<p>Emma funderar en stund och kommer fram till att hon har rätt tråkigt just nu, lika bra att använda dem.</p> 
+					<p>Katten Kattis som precis slagit sig till ro på kudden igen himlar med ögonen och fortsätter sin lur.</p>
+					<p>Som den lilla flicka Emma är så älskar hon prinsessor och börjar då rita en prinsessa direkt på väggen. Är det magiska kritor försvinner det säkert av sig själv från tapeten tänker hon.</p>
 				</section>	
 				
 

@@ -32,9 +32,9 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-4.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-4.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-6.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-6.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->

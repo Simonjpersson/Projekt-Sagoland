@@ -2,20 +2,18 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		
-
 		<title>Sagoland</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script src="javascript.js" type="text/javascript"></script>
 	</head>
 	
-	<body>
-		<div id="wrapper">
-		
+<body>
+	<div id="wrapper">
 		<header>
 			<img class= "full" src="commondesign/banner4.jpg" alt="Logga Sagoland">
 		</header>
-			
+		
+<!--Navigations Meny-->			
 			<div id='cssmenu'>
 				<ul> 	
 					
@@ -30,26 +28,35 @@
 		
 
 
-
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-names.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-front.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-2.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-1.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<img class="storyimages" src="FMDMK/sida1.png" alt="Flickan sitter och ritar, Katten sover">
+					<h2>Vill du byta namn på huvudkaraktärerna?</h2>
+					<p><b>Ja!</b></p>
+					<p>Fyll i nya namn och klicka på Okej-knappen. Sagan kommer nu starta med dina egna påhittade namn på huvudkaraktärerna! </p>
+					<p><b>Nej!</b></p>
+					<p>Klicka dig vidare på sidan så startar sagan med deras riktiga namn.</p>	
+					
 				</section>
 
 				<section id="contentright">
-					<p>Det här är Emma. Emma är 5 år och gillar att rita.</p> 
-					<p>Emmas katt heter Kattis. Katten Kattis gillar också att rita.</p> 
-					<p>I alla fall om man får tro Emma.</p>
-					<p>Katten Kattis himlar med ögonen och fortsätter sin eftermiddagslur.</p>
+					<p>
+						<img src="FMDMK/emma-name.png" alt="Flickan Emma" class="storyimages">
+						<img src="FMDMK/Kattis-name.png" alt="Katten Kattis" class="storyimages">
+					</p>
+					<form>
+						<input type="text" name="name1" value= "">
+						<input type="text" name="name2" value= "">
+						<img src="FMDMK/Okej-knapp.png" alt="Okej" class="storyimages" id="okej-knapp">
+					</form>
 				</section>	
 				
 

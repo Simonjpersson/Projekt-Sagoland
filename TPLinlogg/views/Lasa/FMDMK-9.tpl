@@ -27,27 +27,37 @@
 			</div>
 		
 
+
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<section class="left"><p></p></section>
+				<a href="FMDMK-6.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-names.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-6.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-						
+					<p><img src="FMDMK/sida9.png" alt="Flickan hamnar i Paris." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<img src="FMDMK/Frontpage.png" alt="Flickan med de magiska kritorna" class="storyimages">
+					<p>Hmm tänker Emma. Undrar om man även kan byta land? Pappa har alltid berättat om hur vackert Frankrike är. Ja, jag vet! Jag ritar Eiffeltornet i Paris!</p>
+					<p><b>POFF!!!</b></p>
+					<p>– Hahaha Kattis, du har en basker, utbrister Emma glatt och pekar på Katten Kattis huvudbonad. Och jag är en konstnär! Åh vad fint jag kommer kunna rita nu!</p>
 				</section>	
 				
 
 			</section>
 
+
+
+			<footer>
+				<p> Hemsidan är skapad som ett projekt i kursen Systemutveckling på Malmö Högskola</p>
+				<p>Coypright 2015</p>
+				
+			</footer>
 		</div>
 	</body>
 </html>

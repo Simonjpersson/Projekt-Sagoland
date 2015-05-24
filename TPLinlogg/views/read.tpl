@@ -36,14 +36,14 @@
 				<p class="center">Här kommer du kunna välja bland mängder med sagor </p>
 				
 					<ul>
-						<li><a href="Lasa/FMDMK-front.html#content">Emma och de magiska kritorna</a></li>
-						<li><a href="Lasa/PPA/PPA0.html#content">Prinsessan på ärten</a></li>
-						<li><a href="Lasa/PPA/PPA0.html#content">Den fula ankungen</a></li>
-						<li><a href="Lasa/PPA/PPA0.html#content">Den stora hatten</a></li>
-						<li><a href="Lasa/PPA/PPA0.html#content">Mästerkatten i stövlar</a></li>
-						<li><a href="Lasa/PPA/PPA0.html#content">Törnrosa</a></li>
-						<li><a href="Lasa/PPA/PPA0.html#content">Snövit</a></li>
-						<li><a href="Lasa/PPA/PPA0.html#content">Prinsen på hästen</a></li>
+						<li><a href="/FMDMK-front/#content">Flickan med de magiska kritorna</a></li>
+						<li><a href="Lasa/PPA/PPA0/#content">Prinsessan på ärten</a></li>
+						<li><a href="Lasa/PPA/PPA0/#content">Den fula ankungen</a></li>
+						<li><a href="Lasa/PPA/PPA0/#content#content">Den stora hatten</a></li>
+						<li><a href="Lasa/PPA/PPA0.tpl#content">Mästerkatten i stövlar</a></li>
+						<li><a href="Lasa/PPA/PPA0.tpl#content">Törnrosa</a></li>
+						<li><a href="Lasa/PPA/PPA0.tpl#content">Snövit</a></li>
+						<li><a href="Lasa/PPA/PPA0.tpl#content">Prinsen på hästen</a></li>
 						
 					</ul>
 				</section>

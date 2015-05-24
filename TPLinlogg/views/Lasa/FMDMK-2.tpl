@@ -27,25 +27,24 @@
 			</div>
 		
 
-
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-6.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-1.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-6.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-3.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><img src="FMDMK/sida9.png" alt="Flickan hamnar i Paris." class="storyimages"></p>	
+					<p><img src="FMDMK/sida2.png" alt="Flickan sitter och ritar, Katten sover, Pappa står med portfölj." class="storyimages"></p>		
 				</section>
 
 				<section id="contentright">
-					<p>Hmm tänker Emma. Undrar om man även kan byta land? Pappa har alltid berättat om hur vackert Frankrike är. Ja, jag vet! Jag ritar Eiffeltornet i Paris!</p>
-					<p><b>POFF!!!</b></p>
-					<p>– Hahaha Kattis, du har en basker, utbrister Emma glatt och pekar på Katten Kattis huvudbonad. Och jag är en konstnär! Åh vad fint jag kommer kunna rita nu!</p>
+					<p>Emma bor tillsammans med sin mamma och pappa i ett fint hus där det alltid är sommar.</p> 
+					<p>Emmas mamma jobbar på café och brukar ge Emma en kaka då och då.</p> 
+					<p>Vad Emmas pappa jobbar med vet Emma inte riktigt. Han brukar mest gå runt i fina byxor och en portfölj. Han är inte ofta hemma, men när han kommer tillbaka har han alltid med en fin present åt Emma.</p>
 				</section>	
 				
 

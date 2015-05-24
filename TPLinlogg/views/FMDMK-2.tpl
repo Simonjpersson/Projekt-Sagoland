@@ -27,36 +27,24 @@
 			</div>
 		
 
-
 			<section id="content">
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-front.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-1.tpl#content"><section class="left"><p></p></section></a>
 								
-				<a href="FMDMK-1.html#content"><section class="right"><p></p></section></a>
+				<a href="FMDMK-3.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<h2>Vill du byta namn på huvudkaraktärerna?</h2>
-					<p><b>Ja!</b></p>
-					<p>Fyll i nya namn och klicka på Okej-knappen. Sagan kommer nu starta med dina egna påhittade namn på huvudkaraktärerna! </p>
-					<p><b>Nej!</b></p>
-					<p>Klicka dig vidare på sidan så startar sagan med deras riktiga namn.</p>	
-					
+					<p><img src="FMDMK/sida2.png" alt="Flickan sitter och ritar, Katten sover, Pappa står med portfölj." class="storyimages"></p>		
 				</section>
 
 				<section id="contentright">
-					<p>
-						<img src="FMDMK/emma-name.png" alt="Flickan Emma" class="storyimages">
-						<img src="FMDMK/Kattis-name.png" alt="Katten Kattis" class="storyimages">
-					</p>
-					<form>
-						<input type="text" name="name1" value= "">
-						<input type="text" name="name2" value= "">
-						<img src="FMDMK/Okej-knapp.png" alt="Okej" class="storyimages" id="okej-knapp">
-					</form>
+					<p>Emma bor tillsammans med sin mamma och pappa i ett fint hus där det alltid är sommar.</p> 
+					<p>Emmas mamma jobbar på café och brukar ge Emma en kaka då och då.</p> 
+					<p>Vad Emmas pappa jobbar med vet Emma inte riktigt. Han brukar mest gå runt i fina byxor och en portfölj. Han är inte ofta hemma, men när han kommer tillbaka har han alltid med en fin present åt Emma.</p>
 				</section>	
 				
 

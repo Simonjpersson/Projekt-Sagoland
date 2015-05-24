@@ -19,10 +19,10 @@
 			<div id='cssmenu'>
 				<ul> 	
 					
-						<li class='active'><a href="contact1.html">Kontakta Oss</a></li>
-						<li><a href="loggin.html">Skriv Saga</a></li>
-						<li><a href="read.html">Läs Saga</a></li>
-						<li ><a href="index.html">Startsida</a></li>
+						<li class='active'><a href="contact1.tpl">Kontakta Oss</a></li>
+						<li><a href="loggin.tpl">Skriv Saga</a></li>
+						<li><a href="read.tpl">Läs Saga</a></li>
+						<li ><a href="index.tpl">Startsida</a></li>
 					
 				</ul>
 			

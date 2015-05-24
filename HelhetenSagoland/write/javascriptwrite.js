@@ -111,31 +111,26 @@ function set_font_ComicSansMS(id) {
 
 
 
-function saveTextAsFile()
-{
-    var textToWrite = document.getElementById("story_text").value;
-    var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
-    var fileNameToSaveAs = document.getElementById("Title").value;
+function saveText()/* funktionerna för att spara ner text "Saga" */
+{           
+    var textToSave = document.getElementById("story_text").value; /* skapar funktionen som ska hämta värdet från textarean = story_text */ 
+    var textFileAsBlob = new Blob([textToSave], {type:'text/plain'}); /*Gör att min text sparas som Blob för att använda "lokal lagring" */
+    var fileNameToSave = document.getElementById("Title").value; /* Anger vad filen ska sparas som, detta är styrt till Title där användaren kan skriva ett eget namn på sin saga */
 
-    var downloadLink = document.createElement("a");
-    downloadLink.download = fileNameToSaveAs;
-    downloadLink.innerHTML = "Download File";
-    if (window.webkitURL != null)
+    var downloadLink = document.createElement("a"); /* Gör så att ett länk element skapas utav texten för att kunna spara ner texten. */
+    downloadLink.download = fileNameToSave; 
+
+    /* För att det ska fungera på safari och chrome ska acceptera textfilen som nerladdningsbar */ 
+    if (window.webkitURL != null) 
     {
-        // Chrome allows the link to be clicked
-        // without actually adding it to the DOM.
-        downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+
+        downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);/* För att chrome ska tillåta det som en "länk" (klickbar).*/
     }
     else
     {
-        // Firefox requires the link to be added to the DOM
-        // before it can be clicked.
-        downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-        downloadLink.onclick = destroyClickedElement;
-        downloadLink.style.display = "none";
-        document.body.appendChild(downloadLink);
+
+        downloadLink.href = window.URL.createObjectURL(textFileAsBlob);/* För att firefox ska tillåta det som en "länk" (klickbar).*/
     }
 
-    downloadLink.click();
+    downloadLink.click(); 
 }
-

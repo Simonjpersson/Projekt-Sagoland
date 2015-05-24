@@ -9,7 +9,7 @@
 	
 <body>
 	<div id="wrapper">
-				<header>
+		<header>
 			<img class= "full" src="commondesign/banner4.jpg" alt="Logga Sagoland">
 		</header>
 		
@@ -32,27 +32,20 @@
 
 
 				<!--Dessa sektioner är vänster respektive höger del av sagoboksbilden-->
-				<a href="FMDMK-5.html#content"><section class="left"><p></p></section></a>
+				<a href="FMDMK-6.tpl#content"><section class="left"><p></p></section></a>
 								
-				<section class="right"><p></p></section>
+				<a href="FMDMK-6.tpl#content"><section class="right"><p></p></section></a>
 
 
 				<!--Dessa sektioner är vänster respektive höger innehåll i sagoboken-->
 				<section id="contentleft">
-					<p><h2>Vad vill du att Emma ska rita?</h2>
-					<p>Klicka på bilderna och välj vad Emma ska rita. Vad kommer att hända nu i sagan?</p>
-					
+					<p><img src="FMDMK/sida9.png" alt="Flickan hamnar i Paris." class="storyimages"></p>	
 				</section>
 
 				<section id="contentright">
-					<p>
-						<a href="FMDMK-7.html#content"><img src="FMDMK/sida6-strand.png" alt="Flickan ritar en strand" class="storyimages"></a>
-						<a href="FMDMK-8.html#content"><img src="FMDMK/sida6-hund.png" alt="Flickan ritar en hund" class="storyimages"></a>
-					</p>
-					<p>
-						<a href="FMDMK-9.html#content"><img src="FMDMK/sida6-paris.png" alt="Flickan ritar Eiffeltornet" class="storyimages"></a>
-						<a href="FMDMK-10.html#content"><img src="FMDMK/sida6-gunga.png" alt="Flickan en gunga" class="storyimages"></a>
-					</p>
+					<p>Hmm tänker Emma. Undrar om man även kan byta land? Pappa har alltid berättat om hur vackert Frankrike är. Ja, jag vet! Jag ritar Eiffeltornet i Paris!</p>
+					<p><b>POFF!!!</b></p>
+					<p>– Hahaha Kattis, du har en basker, utbrister Emma glatt och pekar på Katten Kattis huvudbonad. Och jag är en konstnär! Åh vad fint jag kommer kunna rita nu!</p>
 				</section>	
 				
 
