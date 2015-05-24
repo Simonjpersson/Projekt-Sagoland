@@ -7,6 +7,9 @@ import getpass
 import smtplib
 from validate_email import validate_email
 
+"""Med koden ska man kunna registrera sig, logga in, ändra information om sig själv förutom sitt användarnamn  """
+"""Koden ansluter sig till en databas och där lägger vi in all information """
+"""För att koden ska fungera behöver man installera bottle, och validate_email genom pip """
 
 class functions():
     
@@ -16,7 +19,7 @@ class functions():
                 return static_file(filename, root ="static")
 
 
-        """Handels database connection """
+        """Hanterar databas anslutningen """
         def handelsUsers():
                 con=mysql.connector.connect(username=username, mejl=mejl, password1=password1, host="localhost", database="sagoland")
                 cursor=con.cursor()
@@ -28,6 +31,7 @@ class functions():
 
 
 """STARTSIDAN"""
+"""Returnerar startsidan som är en template-sida """
 @route('/')
 def startsida():
         """Kör startsidan"""
@@ -40,12 +44,13 @@ def startsida():
 
 
 """KONTAKTA OSS"""
+"""Returnerar kontaktsidan som är en template-sida"""
 @route('/contact')
 def contact_us():
         """Kontakta oss sidan"""
         return template("Contact/contact1")
 
-
+"""Returnerar en kontaktsidan som tackar användaren för sitt mejl, returneras som är en template-sida"""
 @route('/contact/thank-you')
 def thank_you():
         """Sidan man kommer till när man har skickat ett mail till oss"""
@@ -64,7 +69,7 @@ Koden ansluter sig till en databas som lägger in användare och som kan ändra 
 användares information
 """
 
-"""Registers users """
+"""Registrerar användarens information och lägger in det i databasen """
 @route("/loggain/", method ="POST")
 def regUsers():
         global username, mejl
@@ -85,7 +90,7 @@ def regUsers():
             "invalid credentials"
 
 
-"""User logs in and is then directed to the write-page """
+"""Användaren loggar in och dirigeras om till skrivarsidan """
 @route("/loggain/", method="POST")
 def signIn():
         global username
@@ -101,13 +106,13 @@ def signIn():
             "invalid credentials"
 
 
-"""When user logs in they're directed towards the writing page """
+"""Använadren dirigeras till skrivarsidan """
 @route("/write/")
 def write():
         return template("Write/write")
 
 
-""" you will be aple to edit a user information here"""
+"""Med den här metoden ska användaren kunna redigera om sin information"""
 @route("/edituser/", method ="POST")
 def editUser():
         global username,mejl, password1, password2
