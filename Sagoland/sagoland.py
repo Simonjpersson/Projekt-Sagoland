@@ -7,9 +7,6 @@ import getpass
 import smtplib
 from validate_email import validate_email
 
-"""Med koden ska man kunna registrera sig, logga in, ändra information om sig själv förutom sitt användarnamn  """
-"""Koden ansluter sig till en databas och där lägger vi in all information """
-"""För att koden ska fungera behöver man installera bottle, och validate_email genom pip """
 
 class functions():
     
@@ -19,7 +16,7 @@ class functions():
                 return static_file(filename, root ="static")
 
 
-        """Hanterar databas anslutningen """
+        """Handels database connection """
         def handelsUsers():
                 con=mysql.connector.connect(username=username, mejl=mejl, password1=password1, host="localhost", database="sagoland")
                 cursor=con.cursor()
@@ -31,7 +28,6 @@ class functions():
 
 
 """STARTSIDAN"""
-"""Returnerar startsidan som är en template-sida """
 @route('/')
 def startsida():
         """Kör startsidan"""
@@ -44,17 +40,17 @@ def startsida():
 
 
 """KONTAKTA OSS"""
-"""Returnerar kontaktsidan som är en template-sida"""
 @route('/contact')
 def contact_us():
         """Kontakta oss sidan"""
         return template("Contact/contact1")
 
-"""Returnerar en kontaktsidan som tackar användaren för sitt mejl, returneras som är en template-sida"""
+
 @route('/contact/thank-you')
 def thank_you():
         """Sidan man kommer till när man har skickat ett mail till oss"""
         return template("Contact/thanks")
+
 
 
 
@@ -69,8 +65,8 @@ Koden ansluter sig till en databas som lägger in användare och som kan ändra 
 användares information
 """
 
-"""Registrerar användarens information och lägger in det i databasen """
-@route("/loggain/", method ="POST")
+"""Registers users """
+@route("/loggain")
 def regUsers():
         global username, mejl
 
@@ -78,41 +74,46 @@ def regUsers():
         mejl=request.forms.mejl
         password1=request.forms.password1
         password2=request.forms.password2
-
+        #return template("Login/loggain", title=username, username=username, mejl=mejl, password1=password1,password2=password2)
+       
         if password1==password2:
-            if validate_email(mejl, verify=True):
+            if validate_email(mejl,verify=True):
+                    return template("Login/loggain", title=username, username=username, mejl=mejl, password1=password1,password2=password2)
+        
+
+                    
             #här finns en mysql
-                query('INSERT user(username, mejl, password1)' ' VALUES(%s,%s,%s)', (username, mejl, password1))
-                return template("Login/loggain", title=username, username=username, mejl=mejl, password1=password1,password2=password2)
+                #query('INSERT user(username, mejl, password1)' ' VALUES(%s,%s,%s)', (username, mejl, password1))
+                #return template("Login/loggain", title=username, username=username, mejl=mejl, password1=password1,password2=password2)
         
 
         else:
             "invalid credentials"
 
 
-"""Användaren loggar in och dirigeras om till skrivarsidan """
-@route("/loggain/", method="POST")
+"""User logs in and is then directed to the write-page """
+@route("/loggain")
 def signIn():
         global username
 
         username=request.forms.username
         password1=request.forms.password1
-
+        return template("Login/loggain", title=username, username=username, password1=password1)
     
-        if username and password1 == cursor.execute("SELECT username, password1 FROM user WHERE %s, %s",(username, password1)):
-            return template("write", title=username, username=username, password1=password1)
+        '''if username and password1 == cursor.execute("SELECT username, password1 FROM user WHERE %s, %s",(username, password1)):
+            return template("Write/write", title=username, username=username, password1=password1)
         else:
             cursor.close()
-            "invalid credentials"
+            "invalid credentials"'''
 
 
-"""Använadren dirigeras till skrivarsidan """
-@route("/write/")
+"""When user logs in they're directed towards the writing page """
+@route("/write", method="POST")
 def write():
         return template("Write/write")
 
 
-"""Med den här metoden ska användaren kunna redigera om sin information"""
+""" you will be aple to edit a user information here"""
 @route("/edituser/", method ="POST")
 def editUser():
         global username,mejl, password1, password2
